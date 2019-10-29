@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'user.apps.UserConfig',
 ]
 
@@ -44,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -75,9 +76,17 @@ WSGI_APPLICATION = 'ApiTest.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ApiTest',
+        'USER': 'my_django',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': 3306
     }
 }
 
@@ -102,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'UTC'
 
@@ -156,4 +165,34 @@ LOGGING = {
             'level': 'DEBUG'  # 日志器接收的最低日志级别
         }
     }
+}
+# 指定默认渲染类
+REST_FRAMEWORK = {
+    "DEFAULT_RENDERER_CLASSES": (
+        # json渲染器为第一优先级
+        "rest_framework.renderers.JSONRenderer",
+        # 可浏览的API渲染为第二优先级
+        "rest_framework.renderers.BrowsableAPIRenderer",
+    ),
+    'DEFAULT_FILTER_BACKENDS': [
+        'rest_framework.filters.OrderingFilter',
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ],
+    # 在全局指定分页的引擎
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 同时必须指定每页显示的条数
+    'PAGE_SIZE': 3,
+    # 'DEFAULT_PAGINATION_CLASS': 'utils.pagination.PageNumberPaginationManual',
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 使用JWT Token认证
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        # Basic类型的认证（账号和密码）
+        'rest_framework.authentication.SessionAuthentication',
+        # Session会话认证
+        'rest_framework.authentication.BasicAuthentication',
+    ],
 }
