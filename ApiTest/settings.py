@@ -184,9 +184,9 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 3,
     # 'DEFAULT_PAGINATION_CLASS': 'utils.pagination.PageNumberPaginationManual',
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         # 使用JWT Token认证
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
@@ -195,4 +195,9 @@ REST_FRAMEWORK = {
         # Session会话认证
         'rest_framework.authentication.BasicAuthentication',
     ],
+}
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    'JWT_PAYLOAD_GET_USERNAME_HANDLER': 'utils.jwt_handler.jwt_response_payload_handler'
 }
