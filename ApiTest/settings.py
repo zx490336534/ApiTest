@@ -38,17 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'ApiTest.urls'
@@ -201,3 +204,11 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
     'JWT_PAYLOAD_GET_USERNAME_HANDLER': 'utils.jwt_handler.jwt_response_payload_handler'
 }
+
+CORS_ORIGIN_ALLOW_ALL = True  # 所有域名都允许，默认False
+# CORS_ORIGIN_WHITELIST = [
+#     # 指定可以访问后端的域名
+#     "http://127.0.0.1:8080",
+#     "http://localhost:8080",
+# ]
+CORS_ALLOW_CREDENTIALS = True  # 语序跨域时携带Cookie，默认False

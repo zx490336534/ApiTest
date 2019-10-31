@@ -8,6 +8,8 @@
 """
 from rest_framework import serializers
 from django.contrib.auth.models import User
+from rest_framework.validators import UniqueValidator
+from rest_framework_jwt.settings import api_settings
 
 
 class RegisterSerializer(serializers.ModelSerializer):
@@ -38,7 +40,8 @@ class RegisterSerializer(serializers.ModelSerializer):
                 'label': '邮箱',
                 'help_text': '邮箱',
                 'write_only': True,
-                'required': True
+                'required': True,
+                'validators': [UniqueValidator(queryset=User.objects.all(), message='此邮箱已经被使用')]
             },
             'password': {
                 'label': '密码',
@@ -51,5 +54,22 @@ class RegisterSerializer(serializers.ModelSerializer):
             }
         }
 
+    def validate(self, attrs):
+        password = attrs.get('password')
+        password_conform = attrs.get('password_conform')
+        if password != password_conform:
+            raise serializers.ValidationError('两次输入密码不一致')
+        return attrs
+
     def create(self, validated_data):
-        pass
+        validated_data.pop('password_conform')
+        user = User.objects.create_user(**validated_data)
+        # user = super(RegisterSerializer, self).create(**validated_data)
+        # user.set_password(validated_data['password'])
+        # user.save()
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+        user.token = token
+        return user
