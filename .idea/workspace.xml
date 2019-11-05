@@ -1,10 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="前端部分">
+      <change afterPath="$PROJECT_DIR$/apps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/configures/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/debugtalks/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/envs/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/interfaces/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/projects/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/reports/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testcases/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/testsuits/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/base_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApiTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApiTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiTest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiTest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiTest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,18 +101,46 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/projects/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ApiTest/settings.py">
+        <entry file="file://$PROJECT_DIR$/apps/projects/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state>
+              <caret column="48" selection-start-column="36" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/projects/serializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
-                <element signature="e#308#317#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,13 +148,37 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>JWT_PAYLOAD_HANDLER</find>
+      <find>CORS_OR</find>
+      <find>get_count_by_project</find>
+      <find>serializer</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/user/serializers.py" />
+        <option value="$PROJECT_DIR$/ApiTest/urls.py" />
+        <option value="$PROJECT_DIR$/lemon-test/public/index.html" />
+        <option value="$PROJECT_DIR$/user/views.py" />
+        <option value="$PROJECT_DIR$/user/urls.py" />
         <option value="$PROJECT_DIR$/ApiTest/settings.py" />
+        <option value="$PROJECT_DIR$/utils/base_models.py" />
+        <option value="$PROJECT_DIR$/apps/projects/urls.py" />
+        <option value="$PROJECT_DIR$/apps/projects/serializer.py" />
+        <option value="$PROJECT_DIR$/apps/projects/views.py" />
       </list>
     </option>
   </component>
@@ -62,7 +203,31 @@
             <path>
               <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTest" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -74,8 +239,20 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -89,13 +266,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="ApiTest" type="Python.DjangoServer" factoryName="Django server">
       <module name="ApiTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ApiTest.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -113,6 +291,21 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/lemon-test/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -125,6 +318,11 @@
       <option name="presentableId" value="Default" />
       <updated>1572046107518</updated>
       <workItem from="1572046108654" duration="1086000" />
+      <workItem from="1572363707253" duration="582000" />
+      <workItem from="1572478876265" duration="1529000" />
+      <workItem from="1572529864118" duration="3002000" />
+      <workItem from="1572608370393" duration="2956000" />
+      <workItem from="1572965540083" duration="3100000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -147,39 +345,60 @@
       <option name="project" value="LOCAL" />
       <updated>1572046883554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="前端部分">
+      <created>1572363408481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572363408481</updated>
+    </task>
+    <task id="LOCAL-00005" summary="开启跨域">
+      <created>1572530436671</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572530436671</updated>
+    </task>
+    <task id="LOCAL-00006" summary="注册的时候校验账号密码">
+      <created>1572532452514</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572532452514</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1086000" />
+    <option name="totallyTimeSpent" value="12605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17668097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="manage.py@ApiTest" visible="true" weight="0.2700637" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.42675158" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.4165605" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Json Parser" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="manage.py@ApiTest" order="10" weight="0.40509555" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" weight="0.42675158" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Json Parser" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297568" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,22 +408,384 @@
     <MESSAGE value="git init" />
     <MESSAGE value="添加日志器" />
     <MESSAGE value="创建日志文件就" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建日志文件就" />
+    <MESSAGE value="前端部分" />
+    <MESSAGE value="开启跨域" />
+    <MESSAGE value="注册的时候校验账号密码" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册的时候校验账号密码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ApiTest/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/mytest.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/create_user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/LearnDjango/lib/python3.7/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="288" column="55" selection-start-line="288" selection-start-column="55" selection-end-line="288" selection-end-column="55" />
+          <folding>
+            <element signature="e#529#706#0" />
+            <element signature="e#529#625#1" />
+            <element signature="e#754#1010#0" />
+            <element signature="e#850#1010#0" />
+            <element signature="e#1049#3008#0" />
+            <element signature="e#1049#2146#1" />
+            <element signature="e#2454#2691#0" />
+            <element signature="e#2610#2690#0" />
+            <element signature="e#2724#2854#0" />
+            <element signature="e#2762#2844#0" />
+            <element signature="e#2891#2948#0" />
+            <element signature="e#3051#3211#0" />
+            <element signature="e#3051#3106#1" />
+            <element signature="e#3185#3211#0" />
+            <element signature="e#3245#4451#0" />
+            <element signature="e#3245#4028#1" />
+            <element signature="e#4279#4346#0" />
+            <element signature="e#4379#4395#0" />
+            <element signature="e#4432#4451#0" />
+            <element signature="e#4494#5815#0" />
+            <element signature="e#4599#5046#0" />
+            <element signature="e#4599#4691#1" />
+            <element signature="e#5136#5309#0" />
+            <element signature="e#5394#5815#0" />
+            <element signature="e#5938#6143#0" />
+            <element signature="e#6006#6120#0" />
+            <element signature="e#6187#6551#0" />
+            <element signature="e#6187#6279#1" />
+            <element signature="e#6328#6534#0" />
+            <element signature="e#6411#6476#0" />
+            <element signature="e#6603#6983#0" />
+            <element signature="e#6603#6695#1" />
+            <element signature="e#6744#6966#0" />
+            <element signature="e#6835#6908#0" />
+            <element signature="e#7028#9939#0" />
+            <element signature="e#7028#7151#1" />
+            <element signature="e#7279#7376#0" />
+            <element signature="e#7533#7647#0" />
+            <element signature="e#8023#8038#0" />
+            <element signature="e#8095#8553#0" />
+            <element signature="e#8095#8319#1" />
+            <element signature="e#8404#8526#0" />
+            <element signature="e#8608#8651#0" />
+            <element signature="e#8701#9281#0" />
+            <element signature="e#8701#9059#1" />
+            <element signature="e#9337#9568#0" />
+            <element signature="e#9337#9501#1" />
+            <element signature="e#9621#9939#0" />
+            <element signature="e#9621#9760#1" />
+            <element signature="e#10002#10187#1" />
+            <element signature="e#10501#10582#0" />
+            <element signature="e#11094#11212#0" />
+            <element signature="e#11454#11543#0" />
+            <element signature="e#11574#11661#0" />
+            <element signature="e#11700#11887#0" />
+            <element signature="e#11700#11790#1" />
+            <element signature="e#11927#11999#0" />
+            <element signature="e#12080#12185#0" />
+            <element signature="e#12218#12455#0" />
+            <element signature="e#12218#12382#1" />
+            <element signature="e#12426#12455#0" />
+            <element signature="e#12483#14363#0" />
+            <element signature="e#12708#12730#0" />
+            <element signature="e#12769#12809#0" />
+            <element signature="e#12843#12898#0" />
+            <element signature="e#12931#13026#0" />
+            <element signature="e#13056#13146#0" />
+            <element signature="e#13178#13268#0" />
+            <element signature="e#13320#13410#0" />
+            <element signature="e#13464#13554#0" />
+            <element signature="e#13600#13619#0" />
+            <element signature="e#13675#13704#0" />
+            <element signature="e#13761#13773#0" />
+            <element signature="e#13828#13875#0" />
+            <element signature="e#13925#13967#0" />
+            <element signature="e#14023#14081#0" />
+            <element signature="e#14131#14174#0" />
+            <element signature="e#14226#14237#0" />
+            <element signature="e#14293#14305#0" />
+            <element signature="e#14343#14363#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/LearnDjango/lib/python3.7/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/ApiTest/lib/python3.7/site-packages/rest_framework_jwt/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/ApiTest/lib/python3.7/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3288">
+          <caret line="147" column="8" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/src/components/page/Register.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/src/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lemon-test/src/components/page/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="91" column="39" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/20191030_LearnDjango/user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="67" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/20191030_LearnDjango/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#143#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/testsuits/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiTest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ApiTest/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="459">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="e#308#317#0" expanded="true" />
+            <element signature="e#307#317#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/20191104_LearnDjango/utils/base_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/base_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/envs/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/20191104_LearnDjango/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/interfaces/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/testsuits/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/testcases/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/reports/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/interfaces/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/debugtalks/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/configures/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/jwt_handler.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/projects/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="36" selection-end-column="48" />
         </state>
       </provider>
     </entry>

@@ -9,13 +9,13 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+import sys
 import os
 import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -39,6 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'configures.apps.ConfiguresConfig',
+    'debugtalks.apps.DebugtalksConfig',
+    'envs.apps.EnvsConfig',
+    'interfaces.apps.InterfacesConfig',
+    'projects.apps.ProjectsConfig',
+    'reports.apps.ReportsConfig',
+    'testsuits.apps.TestsuitsConfig',
+    'testcases.apps.TestcasesConfig',
     'user.apps.UserConfig',
 ]
 
