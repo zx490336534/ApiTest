@@ -3,83 +3,11 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-lx-calendar"></i> 配置管理</el-breadcrumb-item>
-                <el-breadcrumb-item>新增配置</el-breadcrumb-item>
+                <el-breadcrumb-item>编辑配置</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
             <el-tabs type="border-card">
-
-                <!--<el-tab-pane label="请求信息">-->
-
-                    <!--<el-tabs style="margin: 0 0 0 10px" v-model="bodyShow">-->
-                        <!--<el-tab-pane label="Headers" name="first">-->
-                            <!--<el-table :data="apiMsgData.header" size="mini" stripe :show-header="false"-->
-                                      <!--class="h-b-e-a-style"-->
-                                      <!--:row-style="{'background-color': 'rgb(250, 250, 250)'}">-->
-                                <!--<el-table-column property="key" label="Key" header-align="center" minWidth="100">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-input v-model="scope.row.key" size="mini" placeholder="key">-->
-                                        <!--</el-input>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-
-                                <!--<el-table-column property="value" label="Value" header-align="center" minWidth="200">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-input v-model="scope.row.value" size="mini" placeholder="value">-->
-                                        <!--</el-input>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-                                <!--<el-table-column property="value" label="操作" header-align="center" width="80">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-button type="danger" icon="el-icon-delete" size="mini"-->
-                                                   <!--@click.native="delTableRow('header',scope.$index)">-->
-                                        <!--</el-button>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-                            <!--</el-table>-->
-                        <!--</el-tab-pane>-->
-                    <!--</el-tabs>-->
-
-                    <!--<el-tabs style="margin: 0 0 0 10px" v-model="otherShow">-->
-                        <!--<el-tab-pane label="环境变量" name="first">-->
-                            <!--<el-table :data="apiMsgData.globalVar" size="mini" stripe :show-header="false"-->
-                                      <!--class="h-b-e-a-style"-->
-                                      <!--:row-style="{'background-color': 'rgb(250, 250, 250)'}">-->
-                                <!--<el-table-column property="key" label="Key" header-align="center" minWidth="100">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-input v-model="scope.row.key" size="mini" placeholder="key">-->
-                                        <!--</el-input>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-
-                                <!--<el-table-column label="type" header-align="center" width="100">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-select v-model="scope.row.param_type" size="mini">-->
-                                            <!--<el-option v-for="item in paramTypes" :key="item" :value="item">-->
-                                            <!--</el-option>-->
-                                        <!--</el-select>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-
-                                <!--<el-table-column property="value" label="Value" header-align="center" minWidth="200">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-input v-model="scope.row.value" size="mini" placeholder="value">-->
-                                        <!--</el-input>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-                                <!--<el-table-column property="value" label="操作" header-align="center" width="80">-->
-                                    <!--<template slot-scope="scope">-->
-                                        <!--<el-button type="danger" icon="el-icon-delete" size="mini"-->
-                                                   <!--@click.native="delTableRow('globalVar',scope.$index)">-->
-                                        <!--</el-button>-->
-                                    <!--</template>-->
-                                <!--</el-table-column>-->
-                            <!--</el-table>-->
-                        <!--</el-tab-pane>-->
-                    <!--</el-tabs>-->
-
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--</el-tab-pane>-->
 
                 <el-tab-pane label="请求头|全局变量">
 
@@ -153,7 +81,7 @@
 
             <el-row>
                 <el-col :span="2">
-                    <el-button type="primary" @click="onSubmit()">提交</el-button>
+                    <el-button type="primary" @click="onSubmit()">更新</el-button>
                 </el-col>
                 <el-col :span="2">
                     <el-button @click="resetForm('form')">取消</el-button>
@@ -162,7 +90,7 @@
         </div>
 
         <!-- 编辑弹出框 -->
-        <el-dialog title="创建配置" :visible.sync="editVisible" width="28%" center>
+        <el-dialog title="编辑配置" :visible.sync="editVisible" width="28%" center>
             <el-form label-width="120px">
                 <el-form-item label="配置名称" required>
                     <el-input v-model="configure_name" clearable></el-input>
@@ -202,14 +130,28 @@
     import {
         projects_names,
         interfaces_by_project_id,
-        configures_by_interface_id,
-        add_configure
+        update_configure,
+        get_detail_configure
     } from '../../api/api';
 
     export default {
+        beforeRouteEnter (to, from, next) {
+            next(vm => {
+                vm.current_configure_id = vm.$route.params.id;
+                vm.getConfigureDetail();
+            });
+            next()
+        },
+        beforeRouteUpdate (to, from, next) {
+            this.current_configure_id = to.params.id;
+            this.getConfigureDetail();
+            next()
+        },
+
         name: 'baseform',
         data: function () {
             return {
+                current_configure_id: null,
                 editVisible: false,   // 新增配置弹框是否显示标识
                 apiMsgData: {
                     id: null,
@@ -228,7 +170,6 @@
                 configure_name: null,  // 配置名称
                 author: '',     // 用例编写人员
                 interfaces: [],
-                configures: [],
             }
         },
         created() {
@@ -236,12 +177,13 @@
         },
         methods: {
             onSubmit() {
-                this.selected_project_id = null;
-                this.selected_interface_id = null;
+                // this.selected_project_id = null;
+                // this.selected_interface_id = null;
                 this.editVisible = true;
             },
             // 处理数据1, 有param_type, 返回js数组
             handleData1(request_data, msg){
+                // let one_data = {};
                 let data_arr = [];
                 for(let i = 0; i < request_data.length; i++) {
                     let key = request_data[i].key;
@@ -275,16 +217,18 @@
                             return []
                         }
                     }
+                    // one_data[key] = value;
                     let one_data = {};
                     one_data[key] = value;
                     data_arr.push(one_data)
                 }
-
+                // return one_data
                 return data_arr
             },
 
             // 处理数据2, 无param_type, 返回js对象
             handleData2(request_data, msg){
+                // let data_arr = [];
                 let one_data = {};
                 for(let i = 0; i < request_data.length; i++) {
                     let key = request_data[i].key;
@@ -292,7 +236,11 @@
                         this.$message.error(msg + '的key为空!');
                         return []
                     }
+                    // let value = request_data[i].value;
+                    // let one_data = {};
+                    // one_data[key] = value;
                     one_data[key] = request_data[i].value;
+                    // data_arr.push(one_data)
                 }
                 return one_data
             },
@@ -354,21 +302,21 @@
 
                 datas.include = JSON.stringify(datas.include);
                 datas.request = JSON.stringify(datas.request);
-                add_configure(datas)
+                update_configure(this.current_configure_id, datas)
                     .then(response => {
                         this.editVisible = false;
-                        let that = this;
-                        this.$message.success(`新增配置成功`);
+                        // let _this = this;
+                        this.$message.success(`更新成功`);
                         // 1秒钟之后, 执行刷新
-                        setInterval(function () {
-                            that.$router.go();
-                        }, 1000);
+                        // setInterval(function () {
+                        //     _this.$router.go();
+                        // }, 1000);
                     })
                     .catch(error => {
                         this.editVisible = false;
                         if (typeof error === 'object' && error.hasOwnProperty('name')) {
                             console.log(error);
-                            this.$message.error('配置名称已存在');
+                            this.$message.error('更新配置失败');
                         } else {
                             console.log(error);
                             this.$message.error('服务器错误');
@@ -394,16 +342,6 @@
                         that.$message.error('服务器错误');
                     });
             },
-            getConfTestcaseByInterfaceID(interface_id) {
-                configures_by_interface_id(interface_id)
-                    .then((response) => {
-                        this.configures = response.data;
-                    })
-                    .catch(error => {
-                        that.$message.error('服务器错误');
-                    });
-
-            },
             changeResult() {
                 let len = this.selected.length;
                 let text = "[";
@@ -425,16 +363,8 @@
                     this.apiMsgData.variable.splice(i, 1);
                 } else if (type === 'header') {
                     this.apiMsgData.header.splice(i, 1);
-                } else if (type === 'param') {
-                    this.apiMsgData.param.splice(i, 1);
-                }else if (type === 'globalVar') {
+                } else if (type === 'globalVar') {
                     this.apiMsgData.globalVar.splice(i, 1);
-                }else if (type === 'parameterized') {
-                    this.apiMsgData.parameterized.splice(i, 1);
-                }else if (type === 'setupHooks') {
-                    this.apiMsgData.setupHooks.splice(i, 1);
-                }else if (type === 'teardownHooks') {
-                    this.apiMsgData.teardownHooks.splice(i, 1);
                 }
             },
             addTableRow(type) {
@@ -442,16 +372,8 @@
                     this.apiMsgData.variable.push({key: null, value: null, param_type: 'string'});
                 } else if (type === 'header') {
                     this.apiMsgData.header.push({key: null, value: null});
-                } else if (type === 'param') {
-                    this.apiMsgData.param.push({key: null, value: null});
                 } else if (type === 'globalVar') {
                     this.apiMsgData.globalVar.push({key: null, value: null, param_type: 'string'});
-                } else if (type === 'parameterized') {
-                    this.apiMsgData.parameterized.push({key: null, value: null});
-                } else if (type === 'setupHooks') {
-                    this.apiMsgData.setupHooks.push({key: null});
-                } else if (type === 'teardownHooks') {
-                    this.apiMsgData.teardownHooks.push({key: null});
                 }
             },
             tempNum(i) {
@@ -480,9 +402,20 @@
 
                 }
             },
-            querySearch(queryString, cb) {
-                // 调用 callback 返回建议列表的数据
-                cb(this.comparators);
+            getConfigureDetail(){
+                get_detail_configure(this.current_configure_id)
+                    .then(response => {
+                        this.configure_name = response.data.configure_name;
+                        this.author = response.data.author;
+                        this.selected_project_id = response.data.selected_project_id;
+                        this.getInterfacesByProjectID(this.selected_project_id);
+                        this.selected_interface_id = response.data.selected_interface_id;
+                        this.apiMsgData.globalVar = response.data.globalVar;
+                        this.apiMsgData.header = response.data.header;
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
         },
         computed: {

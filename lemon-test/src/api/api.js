@@ -93,6 +93,11 @@ export const add_testcase = params => { return axios.post(`${host}/testcases/`, 
 // 运行用例
 export const run_by_testcase = (testcase_id, env_id) => { return axios.post(`${host}/testcases/` + testcase_id + '/run/', {'env_id': env_id}) };
 
+// 获取配置详情
+export const get_detail_testcase = id => { return axios.get(`${host}/testcases/`+ id + '/details/') };
+
+// 修改用例
+export const update_testcase = (id, params) => { return axios.put(`${host}/testcases/` + id + '/', params) };
 
 // 获取测试报告列表信息
 export const reports_list = params => { return axios.get(`${host}/reports/?page=` + params.page + '&size=' + params.size) };
@@ -120,6 +125,12 @@ export const delete_configure = id => { return axios.delete(`${host}/configures/
 
 // 新增配置
 export const add_configure = params => { return axios.post(`${host}/configures/`, params) };
+
+// 获取配置详情
+export const get_detail_configure = id => { return axios.get(`${host}/configures/`+ id + '/details/') };
+
+// 修改配置
+export const update_configure = (id, params) => { return axios.put(`${host}/configures/` + id + '/', params) };
 
 // 获取环境列表信息
 export const envs_list = params => { return axios.get(`${host}/envs/?page=` + params.page + '&size=' + params.size) };

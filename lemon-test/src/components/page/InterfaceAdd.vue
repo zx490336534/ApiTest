@@ -77,18 +77,22 @@
             onSubmit(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        var that = this;
+                        let that = this;
                         add_interface(this.form)
                         .then((response)=> {
                             this.$message.success('新增接口成功！');
-                            this.$refs['form'].resetFields();   // 清空提示信息
+                            // this.$refs['form'].resetFields();   // 清空提示信息
+                            // 1秒钟之后, 执行刷新
+                            setInterval(function () {
+                                that.$router.go();
+                            }, 1000);
                         })
                         .catch(error => {
                             if (typeof error === 'object' && error.hasOwnProperty('name')) {
                                 // this.$message.error(error.name[0]);
                                 this.$message.error('接口名称已存在');
                             } else {
-                                console.log(error)
+                                console.log(error);
                                 this.$message.error('服务器错误');
                             }
                             

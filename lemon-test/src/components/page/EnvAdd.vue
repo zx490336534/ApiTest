@@ -85,7 +85,11 @@
                         add_env(this.form)
                         .then((response)=> {
                             this.$message.success('新增配置成功！');
-                            this.$refs['form'].resetFields();   // 清空提示信息
+                            // this.$refs['form'].resetFields();   // 清空提示信息
+                            // 1秒钟之后, 执行刷新
+                            setInterval(function () {
+                                that.$router.go();
+                            }, 1000);
                         })
                         .catch(error => {
                             if (typeof error === 'object' && error.hasOwnProperty('name')) {

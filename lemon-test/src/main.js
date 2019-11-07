@@ -12,14 +12,17 @@ import { messages } from './components/common/i18n';
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/icon.css';
 import "babel-polyfill";
-// import contentmenu from 'v-contextmenu'
+// 开启contentmenu
+import contentmenu from 'v-contextmenu'
 
 Vue.config.productionTip = false;
 Vue.use(VueI18n);
 Vue.use(ElementUI, {
     size: 'small'
 });
-// Vue.use(contentmenu);
+
+// 开启contentmenu
+Vue.use(contentmenu);
 
 // Vue.component(pie.name, pie);
 // Vue.component(histogram.name, histogram);

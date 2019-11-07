@@ -4,7 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 
-from . import serializer
+from . import serializers
 from .models import Projects
 from .utils import get_count_by_project
 from interfaces.models import Interfaces
@@ -37,7 +37,7 @@ class ProjectsViewSet(ModelViewSet):
     返回某个项目的所有接口信息（ID和名称）
     """
     queryset = Projects.objects.filter(is_delete=False)
-    serializer_class = serializer.ProjectModelSerializer
+    serializer_class = serializers.ProjectModelSerializer
     permission_classes = (permissions.IsAuthenticated,)
     ordering_fields = ('id', 'name')
 
@@ -48,7 +48,7 @@ class ProjectsViewSet(ModelViewSet):
     @action(methods=['get'], detail=False)
     def names(self, request, *args, **kwargs):
         queryset = self.get_queryset()
-        serializer = serializer.ProjectNameSerializer(instance=queryset, many=True)
+        serializer = serializers.ProjectNameSerializer(instance=queryset, many=True)
         return Response(serializer.data)
 
     @action(methods=['get'], detail=True)

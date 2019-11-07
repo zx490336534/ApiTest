@@ -119,13 +119,17 @@
             onSubmit(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        var that = this;
+                        let that = this;
                         add_testsuite(this.form)
                         .then((response)=> {
                             this.$message.success('新增套件成功！');
-                            this.$refs['form'].resetFields();   // 清空提示信息
-                            this.selected = [];
-                            this.unselected = [];
+                            // this.$refs['form'].resetFields();   // 清空提示信息
+                            // this.selected = [];
+                            // this.unselected = [];
+                            // 1秒钟之后, 执行刷新
+                            setInterval(function () {
+                                that.$router.go();
+                            }, 1000);
 
                         })
                         .catch(error => {

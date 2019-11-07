@@ -26,20 +26,20 @@
 
         <el-row>
             <editor
-                    style="font-size: 15px"
-                    v-model="content"
-                    @init="editorInit"
-                    lang="python"
-                    theme="monokai"
-                    width="100%"
-                    height="600px"
-                    :options="{
-                            enableSnippets:true,
-                            enableBasicAutocompletion: true,
-                            enableLiveAutocompletion: true
-                        }">
+                style="font-size: 15px"
+                v-model="content"
+                @init="editorInit"
+                lang="python"
+                theme="monokai"
+                width="100%"
+                height="600px"
+                :options="{
+                        enableSnippets:true,
+                        enableBasicAutocompletion: true,
+                        enableLiveAutocompletion: true
+                    }">
 
-                </editor>
+            </editor>
         </el-row>
 
         <el-row class="btn_class">

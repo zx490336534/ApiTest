@@ -31,7 +31,7 @@
                 <el-table-column label="操作" align="center">
                     <template slot-scope="scope">
                         <el-button type="text" icon="el-icon-edit" @click="handleRun(scope.$index, scope.row)">运行</el-button>
-                        <!--<el-button type="text" icon="el-icon-edit" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>-->
+                        <el-button type="text" icon="el-icon-edit" @click="linkTo(scope.row.id)">编辑</el-button>
                         <el-button type="text" icon="el-icon-delete" class="red" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
                     </template>
                 </el-table-column>
@@ -228,32 +228,6 @@
             handleSelectionChange(val) {
                 this.multipleSelection = val;
             },
-            // 保存编辑
-            // saveEdit() {
-            //     // var datas = this.form;
-            //     var datas = Object.assign({}, this.form);
-            //     delete datas.project;
-            //     edit_interface(this.id, datas)
-            //     .then(response => {
-            //         this.editVisible = false;
-            //         this.$message.success(`修改【 ${this.form.name} 】成功`);
-            //         if(this.tableData[this.idx].id === this.id){
-            //             this.$set(this.tableData, this.idx, this.form);
-            //         }else{
-            //             for(let i = 0; i < this.tableData.length; i++){
-            //                 if(this.tableData[i].id === this.id){
-            //                     this.$set(this.tableData, i, this.form);
-            //                     return ;
-            //                 }
-            //             }
-            //         }
-            //     })
-            //     .catch(error => {
-            //         this.editVisible = false;
-            //         this.$message.error('服务器错误');
-            //     })
-            //
-            // },
             // 确定删除
             deleteRow(){
                 delete_testcase(this.id)
@@ -296,7 +270,10 @@
                 .catch(error => {
                     this.$message.error('服务器错误');
                 })
-            }
+            },
+            linkTo(id) {
+                this.$router.push({ path: `/testcases_edit/${id}` });
+            },
         }
     }
 

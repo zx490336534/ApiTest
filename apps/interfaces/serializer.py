@@ -14,7 +14,7 @@
 from rest_framework import serializers
 
 from interfaces.models import Interfaces
-from projects.serializer import ProjectModelSerializer, ProjectSerializer
+from projects.serializers import ProjectModelSerializer, ProjectSerializer
 
 
 class InterfaceModelSerializer(serializers.ModelSerializer):

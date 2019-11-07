@@ -103,21 +103,18 @@
             onSubmit(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        var that = this;
+                        let that = this;
                         add_project(this.form)
                         .then((response)=> {
                             this.$message.success('新增项目成功！');
-                            // this.$router.push({'name': 'projects_list'});
-                            // alert(this.form)
-
-                            // const keys = Object.keys(this.form);
-                            // for (const key of keys) {
-                            //     this.$set(this.form, key, '');
-                            // }
-                            this.$refs['form'].resetFields();   // 清空提示信息
+                            // 1秒钟之后, 执行刷新
+                            setInterval(function () {
+                                that.$router.go();
+                            }, 1000);
+                            // this.$refs['form'].resetFields();   // 清空提示信息
                         })
                         .catch(error => {
-                            console.log(error)
+                            console.log(error);
                             this.$message.error('服务器错误');
                         });
                                 

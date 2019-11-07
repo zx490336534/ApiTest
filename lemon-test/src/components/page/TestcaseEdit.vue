@@ -3,7 +3,7 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-lx-calendar"></i> 用例管理</el-breadcrumb-item>
-                <el-breadcrumb-item>新增用例</el-breadcrumb-item>
+                <el-breadcrumb-item>编辑用例</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
@@ -38,7 +38,7 @@
 
                                 <el-col :span="12">
                                     <el-form-item label="选择配置">
-                                        <el-select v-model="selected_configure_id" placeholder="请选择">
+                                        <el-select v-model="selected_configure_id" placeholder="请选择" clearable>
                                             <el-option v-for="(item, key) in configures" :key="key" :label="item.name"
                                                        :value="item.id">
                                             </el-option>
@@ -457,7 +457,7 @@
         </v-contextmenu>
 
         <!-- 编辑弹出框 -->
-        <el-dialog title="创建用例" :visible.sync="editVisible" width="28%" center>
+        <el-dialog title="编辑用例" :visible.sync="editVisible" width="28%" center>
             <el-form label-width="120px">
                 <el-form-item label="用例名称" required>
                     <el-input v-model="testcase_name" clearable></el-input>
@@ -500,13 +500,28 @@
         interfaces_by_project_id,
         configures_by_interface_id,
         testcases_by_interface_id,
-        add_testcase
+        get_detail_testcase,
+        update_testcase
     } from '../../api/api';
 
     export default {
+        beforeRouteEnter (to, from, next) {
+            next(vm => {
+                vm.current_testcase_id = vm.$route.params.id;
+                vm.getTestcaseDetail();
+            });
+            next()
+        },
+        beforeRouteUpdate (to, from, next) {
+            this.current_testcase_id = to.params.id;
+            this.getConfigureDetail();
+            next()
+        },
+
         name: 'baseform',
         data: function () {
             return {
+                current_testcase_id: null,
                 editVisible: false,   // 新增项目弹框是否显示标识
                 methods: ['POST', 'GET', 'PUT', 'DELETE'],  // 请求方法
                 types: ['data', 'json', 'params'],  // 请求类型
@@ -555,7 +570,6 @@
                 author: '',     // 用例编写人员
                 interfaces: [],
                 configures: [],
-                // testcases: [], // 选择的某接口下的所有用例
                 unselected: [],     // 未选择的用例
                 selected: [],       // 已选择的用例
             }
@@ -587,8 +601,8 @@
                     return
                 }
 
-                this.selected_project_id = null;
-                this.selected_interface_id = null;
+                // this.selected_project_id = null;
+                // this.selected_interface_id = null;
                 this.editVisible = true;
             },
             // 处理数据1, 有param_type, 返回js对象
@@ -785,6 +799,9 @@
                     return
                 }
 
+                if (this.selected_configure_id === '') {
+                    this.selected_configure_id = null;
+                }
                 let include = {"config": this.selected_configure_id, "testcases": this.selected_testcase_id};
 
                 let handle_url = this.apiMsgData.url.trim().split('?', 1)[0];   // 去掉前后空格之后, 以问号进行切割, 取第一部分
@@ -826,7 +843,7 @@
                     if (request_data.length !== 0) {
                         datas.request.test.request['json'] = JSON.parse(request_data)
                     }
-                }else {
+                } else {
                     paramsType = 'data';
                     request_data = this.apiMsgData.variable;
                     request_data.splice(-1, 1);
@@ -921,16 +938,15 @@
 
                 datas.include = JSON.stringify(datas.include);
                 datas.request = JSON.stringify(datas.request);
-                add_testcase(datas)
+                update_testcase(this.current_testcase_id, datas)
                     .then(response => {
                         this.editVisible = false;
                         let that = this;
-                        this.$message.success(`新增用例成功`);
+                        this.$message.success(`更新用例成功`);
                         // 1秒钟之后, 执行刷新
                         setInterval(function () {
                             that.$router.go();
                         }, 1000);
-                        // this.$router.push({name: 'testcases_list'});
                     })
                     .catch(error => {
                         this.editVisible = false;
@@ -1082,6 +1098,40 @@
             querySearch(queryString, cb) {
                 // 调用 callback 返回建议列表的数据
                 cb(this.comparators);
+            },
+            getTestcaseDetail(){
+                get_detail_testcase(this.current_testcase_id)
+                    .then(response => {
+                        this.author = response.data.author;
+                        this.testcase_name = response.data.testcase_name;
+                        this.selected_project_id = response.data.selected_project_id;
+                        this.getInterfacesByProjectID(this.selected_project_id);
+                        this.selected_interface_id = response.data.selected_interface_id;
+                        this.getConfTestcaseByInterfaceID(this.selected_interface_id);
+                        this.selected_configure_id = response.data.selected_configure_id;
+                        this.selected_testcase_id = response.data.selected_testcase_id;
+
+                        this.apiMsgData.method = response.data.method;
+                        this.apiMsgData.url = response.data.url;
+                        this.apiMsgData.param = response.data.param;
+                        this.apiMsgData.header = response.data.header;
+                        this.apiMsgData.variable = response.data.variable;
+
+                        this.apiMsgData.jsonVariable = response.data.jsonVariable;
+                        if (this.apiMsgData.jsonVariable === 'null') {
+                            this.apiMsgData.choiceType = 'data';
+                        }
+                        this.apiMsgData.extract = response.data.extract;
+                        this.apiMsgData.validate = response.data.validate;
+                        this.apiMsgData.globalVar = response.data.globalVar;
+                        this.apiMsgData.parameterized = response.data.parameterized;
+                        this.apiMsgData.setupHooks = response.data.setupHooks;
+                        this.apiMsgData.teardownHooks = response.data.teardownHooks;
+
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
         },
         computed: {

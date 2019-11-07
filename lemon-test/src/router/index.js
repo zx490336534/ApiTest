@@ -83,6 +83,12 @@ let router = new Router({
                     name: 'testcases_add'
                 },
                 {
+                    path: '/testcases_edit/:id',
+                    component: resolve => require(['../components/page/TestcaseEdit.vue'], resolve),
+                    meta: { title: '用例编辑' },
+                    name: 'testcases_edit'
+                },
+                {
                     path: '/configures_list',
                     component: resolve => require(['../components/page/ConfigureList.vue'], resolve),
                     meta: { title: '配置列表' },
@@ -93,6 +99,12 @@ let router = new Router({
                     component: resolve => require(['../components/page/ConfigureAdd.vue'], resolve),
                     meta: { title: '配置新增' },
                     name: 'configures_add'
+                },
+                {
+                    path: '/configures_edit/:id',
+                    component: resolve => require(['../components/page/ConfigureEdit.vue'], resolve),
+                    meta: { title: '配置编辑' },
+                    name: 'configures_edit'
                 },
                 {
                     path: '/testsuites_list',
@@ -156,15 +168,25 @@ router.beforeEach((to, from, next) => {
           path: '/login',
         });
       }else {
-        if (from.name == 'builtin_edit') {
-            var path_name = to.path.split("/")[2];
+        let routerName = ['builtin_edit', 'configures_edit', 'testcases_edit', 'reports_view'];
+        if (routerName.includes(from.name)) {
+            let path_name = to.path.split("/")[2];
             if (/\D/.test(path_name)) {
                 next({name: path_name});
             }
         }
+        
+        // if (from.name === 'builtin_edit') {
+        //     console.log(to);
+        //     let path_name = to.path.split("/")[2];
+        //     console.log(path_name);
+        //     if (/\D/.test(path_name)) {
+        //         next({name: path_name});
+        //     }
+        // }
+
         next();
       }
-
 });
 
 
