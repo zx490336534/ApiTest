@@ -190,10 +190,10 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend'
     ],
     # 在全局指定分页的引擎
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 同时必须指定每页显示的条数
-    'PAGE_SIZE': 3,
-    # 'DEFAULT_PAGINATION_CLASS': 'utils.pagination.PageNumberPaginationManual',
+    'PAGE_SIZE': 10,
+    'DEFAULT_PAGINATION_CLASS': 'utils.pagination.PageNumberPaginationManual',
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     # 'DEFAULT_PERMISSION_CLASSES': [
     #     'rest_framework.permissions.IsAuthenticated',
