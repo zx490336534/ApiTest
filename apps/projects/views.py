@@ -63,16 +63,6 @@ class ProjectsViewSet(ModelViewSet):
         return Response(data=one_list)
 
     def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.get_queryset())
-
-        page = self.paginate_queryset(queryset)
-        if page is not None:
-            serializer = self.get_serializer(page, many=True)
-            datas = serializer.data
-            datas = get_count_by_project(datas)
-            return self.get_paginated_response(datas)
-
-        serializer = self.get_serializer(queryset, many=True)
-        datas = serializer.data
-        datas = get_count_by_project(datas)
-        return Response(datas)
+        response = super().list(request, *args, **kwargs)
+        response.data['results'] = get_count_by_project(response.data['results'])
+        return response
