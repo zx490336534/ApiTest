@@ -37,17 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'corsheaders',
+    'rest_framework',
+    'django_filters',
+    'drf_yasg',
+    'projects.apps.ProjectsConfig',
+    'interfaces.apps.InterfacesConfig',
+    'user.apps.UserConfig',
     'configures.apps.ConfiguresConfig',
     'debugtalks.apps.DebugtalksConfig',
     'envs.apps.EnvsConfig',
-    'interfaces.apps.InterfacesConfig',
-    'projects.apps.ProjectsConfig',
     'reports.apps.ReportsConfig',
     'testsuits.apps.TestsuitsConfig',
     'testcases.apps.TestcasesConfig',
-    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -187,7 +189,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_FILTER_BACKENDS': [
         'rest_framework.filters.OrderingFilter',
-        'django_filters.rest_framework.DjangoFilterBackend'
+        'django_filters.rest_framework.backends.DjangoFilterBackend'
     ],
     # 在全局指定分页的引擎
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
@@ -209,14 +211,18 @@ REST_FRAMEWORK = {
 }
 
 JWT_AUTH = {
+    # 默认5分钟过期, 可以使用JWT_EXPIRATION_DELTA来设置过期时间
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
-    'JWT_PAYLOAD_GET_USERNAME_HANDLER': 'utils.jwt_handler.jwt_response_payload_handler'
+    'JWT_RESPONSE_PAYLOAD_HANDLER':
+        'utils.jwt_handler.jwt_response_payload_handler',
 }
 
 CORS_ORIGIN_ALLOW_ALL = True  # 所有域名都允许，默认False
 # CORS_ORIGIN_WHITELIST = [
 #     # 指定可以访问后端的域名
 #     "http://127.0.0.1:8080",
+#     "http://127.0.0.1:8000",
 #     "http://localhost:8080",
+#     "http://localhost:8000",
 # ]
 CORS_ALLOW_CREDENTIALS = True  # 语序跨域时携带Cookie，默认False
