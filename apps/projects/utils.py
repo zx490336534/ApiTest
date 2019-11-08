@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
-import re
 from django.db.models import Count
 from interfaces.models import Interfaces
 from testsuits.models import Testsuits
+from utils.timeoperator import change_time
 
 
 def get_count_by_project(datas):
     datas_list = []
     for item in datas:
-        mtch = re.search(r'(.*)T(.*)\..*?', item['create_time'])
-        item['create_time'] = mtch.group(1) + ' ' + mtch.group(2)
-
+        item['create_time'] = change_time(item['create_time'])
         project_id = item['id']
         interfaces_testcases_objs = Interfaces.objects.values('id').annotate(testcases=Count('testcases')). \
             filter(project_id=project_id, is_delete=False)
