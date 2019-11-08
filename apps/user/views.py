@@ -9,7 +9,7 @@ from apps.user.serializers import RegisterSerializer
 
 class RegisterView(CreateAPIView):
     serializer_class = RegisterSerializer
-    authentication_classes = (JSONWebTokenAuthentication,)
+    # authentication_classes = (JSONWebTokenAuthentication,)
 
 
 class UsernameValidateView(APIView):

@@ -1,20 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
--------------------------------------------------
-  @Time : 2019/10/14 20:29 
-  @Auth : 可优
-  @File : serializer.py
-  @IDE  : PyCharm
-  @Motto: ABC(Always Be Coding)
-  @Email: keyou100@qq.com
-  @Company: 湖南省零檬信息技术有限公司
-  @Copyright: 柠檬班
--------------------------------------------------
-"""
 from rest_framework import serializers
 
 from interfaces.models import Interfaces
-from projects.serializers import ProjectModelSerializer, ProjectSerializer
+from projects.models import Projects
+from projects.serializers import ProjectModelSerializer
 
 
 class InterfaceModelSerializer(serializers.ModelSerializer):
@@ -33,3 +22,27 @@ class InterfaceModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Interfaces
         fields = '__all__'
+
+
+class InterfacesSerializer(serializers.ModelSerializer):
+    project = serializers.StringRelatedField(label='项目名称')
+    project_id = serializers.PrimaryKeyRelatedField(queryset=Projects.objects.all(), help_text='项目ID')
+
+    class Meta:
+        model = Interfaces
+        fields = ('id', 'name', 'tester', 'project', 'project_id', 'desc', 'create_time')
+        extra_kwargs = {
+            'create_time': {
+                'read_only': True
+            }
+        }
+
+    def create(self, validated_data):
+        project = validated_data.pop('project_id')
+        validated_data['project'] = project
+        interface = Interfaces.objects.create(**validated_data)
+        return interface
+
+    def update(self, instance, validated_data):
+        if 'project_id' in validated_data:
+            project = validated_data.pop('project_id')
