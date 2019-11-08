@@ -1,7 +1,5 @@
 from django.contrib import admin
-
 from projects.models import Projects
-# from .models import Projects, Person
 
 
 class ProjectsAdmin(admin.ModelAdmin):
@@ -14,4 +12,3 @@ class ProjectsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Projects, ProjectsAdmin)
-# admin.site.register(Person)

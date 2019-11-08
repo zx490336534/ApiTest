@@ -1,5 +1,4 @@
 from rest_framework import routers
-
 from projects import views
 
 # 1. 创建SimpleRouter路由对象

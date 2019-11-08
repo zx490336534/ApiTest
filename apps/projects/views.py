@@ -2,8 +2,6 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework import permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework.exceptions import NotFound
-
 from . import serializers
 from .models import Projects
 from .utils import get_count_by_project
@@ -48,7 +46,7 @@ class ProjectsViewSet(ModelViewSet):
     @action(methods=['get'], detail=False)
     def names(self, request, *args, **kwargs):
         queryset = self.get_queryset()
-        serializer = serializers.ProjectNameSerializer(instance=queryset, many=True)
+        serializer = self.get_serializer(instance=queryset, many=True)
         return Response(serializer.data)
 
     @action(methods=['get'], detail=True)
@@ -66,3 +64,9 @@ class ProjectsViewSet(ModelViewSet):
         response = super().list(request, *args, **kwargs)
         response.data['results'] = get_count_by_project(response.data['results'])
         return response
+
+    def get_serializer_class(self):
+        if self.action == 'names':
+            return serializers.ProjectNameSerializer
+        else:
+            return self.serializer_class
