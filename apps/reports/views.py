@@ -1,5 +1,7 @@
 import re
 import os
+from datetime import datetime
+
 from django.conf import settings
 from django.http import StreamingHttpResponse
 from rest_framework.viewsets import ModelViewSet
@@ -53,9 +55,11 @@ class ReportsViewSet(ModelViewSet):
         name = instance.name
         mtch = re.match(r'(.*_)\d+', name)
         if mtch:
-            mtch = mtch.group(1)
+            mtch = mtch.group(1) + datetime.strftime(datetime.now(), '%Y%m%d%H%M%S') + '.html'
         report_dir = os.path.join(settings.BASE_DIR, 'reports')
         report_path = os.path.join(report_dir, mtch)
+        with open(report_path, 'w') as f:
+            f.write(html)
         response = StreamingHttpResponse(get_file_contents(report_path))
         response['Content-Type'] = "application/octet-stream"
         response['Content-Disposition'] = "attachment; filename*=UTF-8''{}".format(name)

@@ -17,8 +17,9 @@ def format_output(datas):
         datas_list.append(item)
     return datas_list
 
+
 def get_file_contents(filename, chunk_size=512):
-    with open(filename,encoding='utf8') as f:
+    with open(filename, encoding='utf8') as f:
         while True:
             c = f.read(chunk_size)
             if c:
