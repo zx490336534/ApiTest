@@ -9,6 +9,28 @@ from envs.utils import handle_env
 
 
 class EnvsViewSet(ModelViewSet):
+    """
+    list:
+    返回环境变量（多个）列表数据
+
+    create:
+    创建环境变量
+
+    retrieve:
+    返回环境变量（单个）详情数据
+
+    update:
+    更新（全）环境变量
+
+    partial_update:
+    更新（部分）环境变量
+
+    destroy:
+    删除环境变量
+
+    names:
+    返回所有环境变量ID和名称
+    """
     queryset = Envs.objects.filter(is_delete=False)
     serializer_class = EnvsSerializer
     permission_classes = (permissions.IsAuthenticated,)

@@ -226,3 +226,9 @@ CORS_ORIGIN_ALLOW_ALL = True  # 所有域名都允许，默认False
 #     "http://localhost:8000",
 # ]
 CORS_ALLOW_CREDENTIALS = True  # 语序跨域时携带Cookie，默认False
+
+# 测试报告HTML文件所在目录
+REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
+
+# 测试yaml文件所在目录
+SUITES_DIR = os.path.join(BASE_DIR, 'suites')
