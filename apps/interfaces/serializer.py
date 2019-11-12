@@ -46,3 +46,5 @@ class InterfacesSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         if 'project_id' in validated_data:
             project = validated_data.pop('project_id')
+            validated_data['project'] = project
+        return super().update(instance, validated_data)

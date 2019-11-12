@@ -11,19 +11,19 @@ from interfaces.models import Interfaces
 class ProjectsViewSet(ModelViewSet):
     """
     list:
-    返回项目（多个）列表数据
+    返回项目(多个)列表数据
 
     create:
     创建项目
 
     retrieve:
-    返回项目（单个）详情数据
+    返回项目(单个)详情数据
 
     update:
-    更新（全）项目
+    更新(全)项目
 
     partial_update:
-    更新（部分）项目
+    更新(部分)项目
 
     destroy:
     删除项目
@@ -32,7 +32,7 @@ class ProjectsViewSet(ModelViewSet):
     返回所有项目ID和名称
 
     interfaces:
-    返回某个项目的所有接口信息（ID和名称）
+    返回某个项目的所有接口信息(ID和名称)
     """
     queryset = Projects.objects.filter(is_delete=False)
     serializer_class = serializers.ProjectModelSerializer
