@@ -69,6 +69,13 @@ export const delete_testsuite = id => { return axios.delete(`${host}/testsuits/`
 // 新增套件
 export const add_testsuite = params => { return axios.post(`${host}/testsuits/`, params) };
 
+// 获取套件详情
+export const get_detail_testsuite = id => { return axios.get(`${host}/testsuits/`+ id + '/') };
+
+// 修改套件
+export const update_testsuite = (id, params) => { return axios.put(`${host}/testsuits/` + id + '/', params) };
+
+
 // 通过套件来运行用例
 export const run_by_testsuite = (testsuite_id, env_id) => { return axios.post(`${host}/testsuits/` + testsuite_id + '/run/', {'env_id': env_id}) };
 
@@ -93,8 +100,9 @@ export const add_testcase = params => { return axios.post(`${host}/testcases/`, 
 // 运行用例
 export const run_by_testcase = (testcase_id, env_id) => { return axios.post(`${host}/testcases/` + testcase_id + '/run/', {'env_id': env_id}) };
 
-// 获取配置详情
-export const get_detail_testcase = id => { return axios.get(`${host}/testcases/`+ id + '/details/') };
+// 获取用例详情
+// export const get_detail_testcase = id => { return axios.get(`${host}/testcases/`+ id + '/details/') };
+export const get_detail_testcase = id => { return axios.get(`${host}/testcases/`+ id + '/') };
 
 // 修改用例
 export const update_testcase = (id, params) => { return axios.put(`${host}/testcases/` + id + '/', params) };
@@ -127,7 +135,8 @@ export const delete_configure = id => { return axios.delete(`${host}/configures/
 export const add_configure = params => { return axios.post(`${host}/configures/`, params) };
 
 // 获取配置详情
-export const get_detail_configure = id => { return axios.get(`${host}/configures/`+ id + '/details/') };
+// export const get_detail_configure = id => { return axios.get(`${host}/configures/`+ id + '/details/') };
+export const get_detail_configure = id => { return axios.get(`${host}/configures/`+ id + '/') };
 
 // 修改配置
 export const update_configure = (id, params) => { return axios.put(`${host}/configures/` + id + '/', params) };

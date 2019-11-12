@@ -22,13 +22,7 @@
 
                     <template slot-scope="scope">
                         <el-link icon="el-icon-edit" type="primary" @click="linkTo(scope.row.id)">{{ scope.row.name }}</el-link>
-                        <!-- <router-link :to="{ path: `/builtin_edit/${id}` }">
-                            {{ scope.row.name }}
-                        </router-link> -->
-                        <!-- <router-link :to="{ name: 'builtin_edit',  params: { id: scope.row.id }}">
-                            {{ scope.row.name }}
-                        </router-link> -->
-                        <!-- { name: 'user', params: { userId: 123 }} -->
+                        
                 </template>
                 </el-table-column>
 

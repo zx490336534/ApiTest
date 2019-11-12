@@ -19,9 +19,6 @@
 
                     <el-form-item label="所属项目" prop="project_id" required>
                         <el-select v-model="form.project_id" placeholder="请选择">
-                            <!-- <el-option key="bbk" label="项目1" value="1"></el-option>
-                            <el-option key="xtc" label="项目2" value="2"></el-option>
-                            <el-option key="imoo" label="项目3" value="3"></el-option> -->
                             <el-option v-for="(item, key) in project_names" :key="key" :label="item.name" :value="item.id">
                             </el-option>
                         </el-select>

@@ -119,6 +119,12 @@ let router = new Router({
                     name: 'testsuites_add'
                 },
                 {
+                    path: '/testsuites_edit/:id',
+                    component: resolve => require(['../components/page/TestsuiteEdit.vue'], resolve),
+                    meta: { title: '套件编辑' },
+                    name: 'testsuites_edit'
+                },
+                {
                     path: '/reports_list',
                     component: resolve => require(['../components/page/ReportList.vue'], resolve),
                     meta: { title: '报告列表' },
@@ -168,7 +174,7 @@ router.beforeEach((to, from, next) => {
           path: '/login',
         });
       }else {
-        let routerName = ['builtin_edit', 'configures_edit', 'testcases_edit', 'reports_view'];
+        let routerName = ['builtin_edit', 'configures_edit', 'testcases_edit', 'reports_view', 'testsuites_edit'];
         if (routerName.includes(from.name)) {
             let path_name = to.path.split("/")[2];
             if (/\D/.test(path_name)) {

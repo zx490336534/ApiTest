@@ -514,7 +514,7 @@
         },
         beforeRouteUpdate (to, from, next) {
             this.current_testcase_id = to.params.id;
-            this.getConfigureDetail();
+            this.getTestSuiteDetail();
             next()
         },
 

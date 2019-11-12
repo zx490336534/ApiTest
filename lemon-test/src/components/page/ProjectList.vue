@@ -9,20 +9,12 @@
         <div class="container">
             <div class="handle-box">
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
-                <!-- <el-select v-model="select_cate" placeholder="筛选项目" class="handle-select mr10">
-                    <el-option key="1" label="广东省" value="广东省"></el-option>
-                    <el-option key="2" label="湖南省" value="湖南省"></el-option>
-                </el-select> -->
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
-                <!-- <el-button type="primary" icon="el-icon-search" @click="search">搜索</el-button> -->
             </div>
             <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange" stripe>
                 <el-table-column type="selection" width="55" align="center"></el-table-column>
 
                 <el-table-column type="index" label="序号" width="55" align="center"></el-table-column>
-
-                <!-- <el-table-column prop="date" label="日期" sortable width="150">
-                </el-table-column> -->
 
                 <el-table-column prop="name" label="项目名称" width="250">
                     <template slot-scope="scope">
@@ -51,8 +43,6 @@
                 <el-table-column prop="create_time" label="创建时间" sortable align="center">
                 </el-table-column>
 
-                <!-- <el-table-column prop="address" label="地址" :formatter="formatter">
-                </el-table-column> -->
                 <el-table-column label="操作" align="center">
                     <template slot-scope="scope">
                         <el-button type="text" icon="el-icon-edit" @click="handleRun(scope.$index, scope.row)">运行</el-button>
@@ -72,9 +62,6 @@
         <!-- 编辑弹出框 -->
         <el-dialog title="编辑项目" :visible.sync="editVisible" width="30%" center>
             <el-form ref="form" :model="form" label-width="120px">
-                <!-- <el-form-item label="日期">
-                    <el-date-picker type="date" placeholder="选择日期" v-model="form.date" value-format="yyyy-MM-dd" style="width: 100%;"></el-date-picker>
-                </el-form-item> -->
                 <el-form-item label="项目名称">
                     <el-input v-model="form.name" clearable></el-input>
                 </el-form-item>
@@ -119,11 +106,6 @@
         <el-dialog title="运行项目" :visible.sync="runVisible" width="30%" center>
             <el-form ref="form" :model="form" label-width="120px">
                 <el-form-item label="运行环境">
-                    <!-- <el-select v-model="form.region" placeholder="请选择">
-                        <el-option key="bbk" label="步步高" value="bbk"></el-option>
-                        <el-option key="xtc" label="小天才" value="xtc"></el-option>
-                        <el-option key="imoo" label="imoo" value="imoo"></el-option>
-                    </el-select> -->
 
                     <el-select v-model="env_id" clearable placeholder="请选择">
                         <el-option
@@ -147,8 +129,6 @@
 
 <script>
     import { projects_list, delete_project, edit_project, envs_names, run_by_project } from '../../api/api';
-    // import { delimiter } from 'path';
-    // import func from '../../../vue-temp/vue-editor-bridge';
     export default {
         name: 'basetable',
         data() {
@@ -166,11 +146,6 @@
                 editVisible: false,   // 新增项目弹框是否显示标识
                 delVisible: false,    // 删除项目弹框是否显示标识
                 runVisible: false,    // 运行项目弹框是否显示标识
-                // form: {
-                //     name: '',
-                //     date: '',
-                //     address: ''
-                // },
                 form: {},
 
                 project_idx: -1,   // 在tableData数组中的索引值 
@@ -195,12 +170,6 @@
                         }
                     }
                     if (!is_del) {
-                        // if (d.publish_app.indexOf(this.select_cate) > -1 &&
-                        //     (d.name.indexOf(this.select_word) > -1 ||
-                        //         d.publish_app.indexOf(this.select_word) > -1)
-                        // ) {
-                        //     return d;
-                        // }
                         if (d.name.indexOf(this.select_word) > -1 ||
                             d.publish_app.indexOf(this.select_word) > -1 ||
                             d.leader.indexOf(this.select_word) > -1 ||
@@ -225,12 +194,6 @@
             },
             // 获取 easy-mock 的模拟数据
             getData() {
-                // fetchData({
-                //     page: this.cur_page
-                // }).then((res) => {
-                //     this.tableData = res.list;
-                // })
-
                 projects_list({
                     'page': this.cur_page,
                     'size': this.page_size
@@ -253,12 +216,6 @@
             handleEdit(index, row) {
                 this.project_idx = index;   // 当前修改的数据, 在tableData数组中的索引值
                 this.project_id = row.id;   // 当前修改的数据在数据库中的真实索引值
-                // this.form = {
-                //     id: row.id,
-                //     name: row.name,
-                //     date: row.date,
-                //     address: row.address
-                // }
                 this.form = row;
                 this.editVisible = true;
             },
@@ -269,10 +226,6 @@
                 this.runVisible = true;
             },
             handleDelete(index, row) {
-                // console.log('index: ' + index);
-                // console.log('项目名: ' + row.name);
-                // console.log('项目ID: ' + row.id);
-
                 this.project_idx = index;
                 this.project_id = row.id;
                 this.delVisible = true;
@@ -323,18 +276,6 @@
                     this.$message.error('服务器错误');
                 })
 
-                // this.editVisible = false;
-                // this.$message.success(`修改第 ${this.idx+1} 行成功`);
-                // if(this.tableData[this.project_idx].id === this.project_id){
-                //     this.$set(this.tableData, this.project_idx, this.form);
-                // }else{
-                //     for(let i = 0; i < this.tableData.length; i++){
-                //         if(this.tableData[i].id === this.project_id){
-                //             this.$set(this.tableData, i, this.form);
-                //             return ;
-                //         }
-                //     }
-                // }
             },
             // 确定删除
             deleteRow(){
@@ -359,17 +300,6 @@
                 .catch(error => {
                     this.$message.error('服务器错误');
                 })
-
-                // if(this.tableData[this.idx].id === this.id){
-                //     this.tableData.splice(this.idx, 1);
-                // }else{
-                //     for(let i = 0; i < this.tableData.length; i++){
-                //         if(this.tableData[i].id === this.id){
-                //             this.tableData.splice(i, 1);
-                //             return ;
-                //         }
-                //     }
-                // }
             },
             // 获取所有环境变量的ID和名称
             getEnvsIdNames(){
@@ -389,9 +319,6 @@
                     this.$router.push({ path: `/reports_view/${response.data.id}` })
                 })
                 .catch(error => {
-                    // console.log(error);
-                    // console.log(typeof error);
-                    // console.log(error.status_code);
                     if (typeof error === 'object' && error.status_code === 400){
                         this.$message.error(error.detail);
                     } else {
@@ -399,28 +326,6 @@
                     }
                 })
             }
-            // del_project: function(pro_id) {
-            //     delete_project(pro_id)
-            //     .then(response => {
-            //         // 项目删除成功
-            //         if(this.tableData[this.project_idx].id === this.project_id){
-            //             this.tableData.splice(this.project_idx, 1);
-            //         }else{
-            //             for(let i = 0; i < this.tableData.length; i++){
-            //                 if(this.tableData[i].id === this.project_id){
-            //                     this.tableData.splice(i, 1);
-            //                     return ;
-            //                 }
-            //             }
-            //         }
-            //         this.$message.success('删除成功');
-            //         this.delVisible = false;
-            //     })
-            //     .catch(error => {
-            //         console.log(error);
-            //         this.$message.error('服务器错误');
-            //     })
-            // }
         }
     }
 

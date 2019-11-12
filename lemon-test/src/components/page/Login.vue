@@ -15,27 +15,11 @@
                         <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
                     </el-input>
                 </el-form-item>
-                <!-- <el-form-item prop="remember_me">
-                    <el-input type="checkbox" v-model="ruleForm.remember_me">
-                        <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
-                    </el-input>
-                </el-form-item>
-                <el-form-item prop="remember_me">
-                    <el-radio-group v-model="ruleForm.remember_me">
-                        <el-radio label="记住我"></el-radio>
-                    </el-radio-group>
-                </el-form-item>
-
-                <el-form-item prop="remember_me" label="选择开关">
-                    <el-switch v-model="ruleForm.remember_me"></el-switch>
-                </el-form-item> -->
 
                 <el-form-item label="记住我" class="remember_me" size="mini">
                     <el-switch v-model="ruleForm.remember_me"></el-switch>
                     <el-link type="info" :underline="false" class="register_link" href="/register">没有账号？点击注册</el-link>
                 </el-form-item>
-
-                <!-- <el-link :underline="false">没有账号？点击注册</el-link> -->
 
                 <div class="login-btn">
                     <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
@@ -74,18 +58,10 @@
             submitForm(formName) {
                 // alert(1111);
                 this.$refs[formName].validate((valid) => {
-                    // alert("valid: " + valid);
                     if (valid) {
-                        // localStorage.setItem('ms_username',this.ruleForm.username);
-                        // this.$router.push('/');
                         var that = this;
                         login(this.ruleForm)
                         .then((response)=> {
-                            // console.log(response);
-                            //本地存储用户信息
-                            // cookie.setCookie('username', response.data.username, 1);
-                            // cookie.setCookie('user_id', response.data.user_id, 1);
-                            // cookie.setCookie('token', response.data.token, 1);
 
                             // 使用浏览器本地存储保存token
                             if (that.remember_me) {
@@ -101,13 +77,6 @@
                                 sessionStorage.user_id = response.data.user_id;
                                 sessionStorage.username = response.data.username;
                             }
-
-                            //存储在store
-                            // 更新store数据
-                            // that.$store.dispatch('setInfo');
-                            //跳转到首页页面
-                            // console.log(that.$router)
-                            // alert(1111);
                             that.$router.push({ name: 'index'})
                         })
                             .catch(error => {
@@ -124,22 +93,6 @@
                                     that.err_msg = "网络异常";
 
                                 }
-
-                                // if("username" in error){
-                                //     that.err_msg = error.username[0];
-                                // }
-                                // if("password" in error){
-                                //     that.err_msg = error.password[0];
-                                // }
-                                // console.log(error)
-
-                                // if (error.response && error.response.status == 400) {
-                                //     that.err_msg = '用户名或密码错误';
-                                // } else if (error.response) {
-                                //     that.err_msg = '服务器错误';
-                                // } else if (error.request){
-                                //     that.err_msg = error.message;
-                                // }
 
                                 that.err_info = true;
                             });

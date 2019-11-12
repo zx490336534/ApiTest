@@ -1,28 +1,5 @@
 <template>
     <div class="table">
-        <!-- <div>User {{ $route.params.id }}</div> -->
-        <!-- <el-row>
-            <el-col :span="16"
-                    style="border:3px solid rgb(189, 189, 189)">
-                <el-container>
-                    <editor
-                            style="font-size: 15px"
-                            v-model="funcData"
-                            @init="editorInit"
-                            lang="python"
-                            theme="monokai"
-                            width="100%"
-                            height="1000px"
-                            :options="{
-                                 enableSnippets:true,
-                                 enableBasicAutocompletion: true,
-                                 enableLiveAutocompletion: true
-                             }"
-                    >
-                    </editor>
-                </el-container>
-            </el-col>
-        </el-row> -->
 
         <el-row>
             <editor

@@ -44,32 +44,6 @@
             </div>
         </div>
 
-        <!-- 编辑弹出框 -->
-        <!--<el-dialog title="编辑用例" :visible.sync="editVisible" width="30%" center>-->
-            <!--<el-form ref="form" :model="form" label-width="120px">-->
-                <!--<el-form-item label="用例名称">-->
-                    <!--<el-input v-model="form.name" clearable></el-input>-->
-                <!--</el-form-item>-->
-
-                <!--<el-form-item label="测试人员">-->
-                    <!--<el-input v-model="form.author" clearable></el-input>-->
-                <!--</el-form-item>-->
-
-                <!--<el-form-item label="所属项目">-->
-                    <!--<el-input v-model="form.interface.project" disabled></el-input>-->
-                <!--</el-form-item>-->
-
-                <!--<el-form-item label="所属接口">-->
-                    <!--<el-input v-model="form.interface.name" disabled></el-input>-->
-                <!--</el-form-item>-->
-
-            <!--</el-form>-->
-            <!--<span slot="footer" class="dialog-footer">-->
-                <!--<el-button @click="editVisible = false">取 消</el-button>-->
-                <!--<el-button type="primary" @click="saveEdit">确 定</el-button>-->
-            <!--</span>-->
-        <!--</el-dialog>-->
-
         <!-- 删除提示框 -->
         <el-dialog title="删除接口" :visible.sync="delVisible" width="300px" center>
             <div class="del-dialog-cnt">删除不可恢复，是否确定删除？</div>

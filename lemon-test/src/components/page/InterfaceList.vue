@@ -147,7 +147,7 @@ import { O_RDONLY } from 'constants';
             }
         },
         created() {
-            this.getData();     // 获取项目数据
+            this.getData();     // 获取接口数据
             this.getEnvsIdNames();  // 获取环境变量ID和名称
         },
         computed: {

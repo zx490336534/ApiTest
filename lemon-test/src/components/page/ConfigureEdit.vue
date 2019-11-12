@@ -156,6 +156,7 @@
                 apiMsgData: {
                     id: null,
                     name: "",
+                    // {"headers":{"X-Lemonban-Media-Type":"lemonban.v1","Accept":"application/json"}}
                     header: [{key: null, value: null}],
                     globalVar: [{key: null, value: null, param_type: 'string'}],
                 },

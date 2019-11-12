@@ -3,7 +3,7 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item><i class="el-icon-lx-calendar"></i> 套件管理</el-breadcrumb-item>
-                <el-breadcrumb-item>新增套件</el-breadcrumb-item>
+                <el-breadcrumb-item>编辑套件</el-breadcrumb-item>
             </el-breadcrumb>
         </div>
         <div class="container">
@@ -20,7 +20,7 @@
                         </el-select>
                     </el-form-item>
                     
-                    <el-form-item label="选择接口" prop="include" required>
+                    <el-form-item label="选择接口" required>
                         <div class="drag-box">
                             <div class="drag-box-item">
                                 <div class="item-title">待选接口</div>
@@ -59,16 +59,29 @@
 
 <script>
     import draggable from 'vuedraggable'
-    import { add_testsuite, projects_names, interfaces_by_project_id} from '../../api/api';
+    import { update_testsuite, projects_names, interfaces_by_project_id, get_detail_testsuite} from '../../api/api';
 
     export default {
+        beforeRouteEnter (to, from, next) {
+            next(vm => {
+                vm.current_testsuite_id = vm.$route.params.id;
+                vm.getTestSuiteDetail();
+            });
+            next()
+        },
+        beforeRouteUpdate (to, from, next) {
+            this.current_testsuite_id = to.params.id;
+            this.getTestSuiteDetail();
+            next()
+        },
         name: 'baseform',
         data: function(){
             return {
+                current_testsuite_id: null,
                 form: {
                     name: '',           // 套件名称
                     project_id: '',    // 项目ID
-                    include: '[]',     // 接口ID列表字符串
+                    include: '[]',       // 接口ID列表字符串
                 },
                 rules: {
                     name: [
@@ -100,9 +113,9 @@
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
                         let that = this;
-                        add_testsuite(this.form)
+                        update_testsuite(this.current_testsuite_id, this.form)
                         .then((response)=> {
-                            this.$message.success('新增套件成功！');
+                            this.$message.success('修改套件成功！');
                             // this.$refs['form'].resetFields();   // 清空提示信息
                             // this.selected = [];
                             // this.unselected = [];
@@ -160,17 +173,30 @@
                 var len = this.selected.length;
                 var text = "[";
                 for (var i = 0; i < len; i++) {
-                    if (i == len-1) {
+                    if (i === len-1) {
                         text += this.selected[i].id + "]";
                     } else {
                         text += this.selected[i].id + ", ";
                     }
                     
                 }
-                if (len == 0){
+                if (len === 0){
                     text = "[]";
                 }
                this.form.include = text;
+            },
+            getTestSuiteDetail(){
+                get_detail_testsuite(this.current_testsuite_id)
+                    .then(response => {
+                        this.form.name = response.data.name;
+                        this.form.project_id = response.data.project_id;
+                        this.getInterfacesByProjectID(this.form.project_id);
+                        this.form.include = response.data.include;
+
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
         }
     }

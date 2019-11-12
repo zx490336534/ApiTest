@@ -53,14 +53,18 @@
             closeOther(){
                 const curItem = this.tagsList.filter(item => {
                     return item.path === this.$route.fullPath;
-                })
+                });
                 this.tagsList = curItem;
             },
             // 设置标签
             setTags(route){
                 const isExist = this.tagsList.some(item => {
+                    // console.log("item: ", item);
+                    // if (item.name === 'reportShow') {
+                    //     return true
+                    // }
                     return item.path === route.fullPath;
-                })
+                });
                 if(!isExist){
                     if(this.tagsList.length >= 8){
                         this.tagsList.shift();
@@ -84,14 +88,13 @@
         },
         watch:{
             $route(newValue, oldValue){
-                this.setTags(newValue);
-                // if (newValue.name === "builtin_edit") {
-                    // this.$router.go();  // 切换到编辑内置函数页时, 重载当前页
-                    
-                    // console.log(this.content);
-                // }
-                // console.log(newValue);
-                // console.log(oldValue);
+                // console.log("newValue: ", newValue);
+                // console.log("oldValue: ", oldValue);
+                // 当点击报告日志时, 不会重新创建tag标签
+                if (newValue.name !== oldValue.name) {
+                    this.setTags(newValue);
+                }
+                // this.setTags(newValue);
             }
         },
         created(){
