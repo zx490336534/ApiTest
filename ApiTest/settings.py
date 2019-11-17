@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'reports.apps.ReportsConfig',
     'testsuits.apps.TestsuitsConfig',
     'testcases.apps.TestcasesConfig',
+    'summary.apps.SummaryConfig',
 ]
 
 MIDDLEWARE = [

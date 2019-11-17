@@ -31,7 +31,7 @@ schema_view = get_schema_view(
         license=openapi.License(name="BSD License"),
     ),
     public=True,
-    permission_classes=(permissions.AllowAny,),   # 权限类
+    permission_classes=(permissions.AllowAny,),  # 权限类
 )
 
 urlpatterns = [
@@ -44,6 +44,7 @@ urlpatterns = [
     path('', include('debugtalks.urls')),
     path('', include('testcases.urls')),
     path('', include('testsuits.urls')),
+    path('', include('summary.urls')),
     path('docs/', include_docs_urls(title='测试平台接口文档',
                                     description='这是一个美轮美奂的接口文档平台')),
 
