@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 SECRET_KEY = 'r+43er(z)sj=+jvt+ehqhf5vomaib38^@y4-i9xo2#6rm1azcd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # 允许用来访问web服务的IP地址或者域名,默认只允许通过127.0.0.1或者localhost来访问
 ALLOWED_HOSTS = ["*"]
@@ -233,3 +233,5 @@ REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
 
 # 测试yaml文件所在目录
 SUITES_DIR = os.path.join(BASE_DIR, 'suites')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'front_ends/static')
