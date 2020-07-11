@@ -284,7 +284,7 @@
             confirmRun(){
                 run_by_testsuite(this.id, this.env_id)
                 .then(response => {
-                    // console.log(response.data);   // 通过套件运行用例
+					this.runVisible=false;
                     this.$router.push({ path: `/reports_view/${response.data.id}` })
                 })
                 .catch(error => {
