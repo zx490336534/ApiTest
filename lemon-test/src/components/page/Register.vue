@@ -5,7 +5,6 @@
             <div class="ms-title">用户注册</div>
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="ms-content">
                 <el-form-item prop="username" :error="err_username_msg">
-                    <!-- @focus="err_username_msg=''" -->
                     <el-input v-model="ruleForm.username" placeholder="请输入用户名" clearable 
                         @focus="clearValidate('username')">
                         <el-button slot="prepend" icon="el-icon-lx-people"></el-button>
@@ -26,9 +25,9 @@
                     </el-input>
                 </el-form-item>
 
-                <el-form-item prop="password_confirm">
-                    <el-input type="password" placeholder="请输入确认密码" v-model="ruleForm.password_confirm" 
-                    @keyup.enter.native="submitForm('ruleForm')" @focus="clearValidate('password_confirm')">
+                <el-form-item prop="password_conform">
+                    <el-input type="password" placeholder="请输入确认密码" v-model="ruleForm.password_conform" 
+                    @keyup.enter.native="submitForm('ruleForm')" @focus="clearValidate('password_conform')">
                         <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
                     </el-input>
                 </el-form-item>
@@ -118,8 +117,8 @@
                 if(len<6||len>20){
                     callback(new Error('密码最少6位，最多20位'));
                 } else {
-                    if (this.ruleForm.password_confirm !== '') {
-                        this.$refs.ruleForm.validateField('password_confirm');
+                    if (this.ruleForm.password_conform !== '') {
+                        this.$refs.ruleForm.validateField('password_conform');
                     }
                     callback();
                 }
@@ -140,7 +139,7 @@
                     username: '',
                     email: '',
                     password: '',
-                    password_confirm: ''
+                    password_conform: ''
                 },
                 err_info: false,    // 是否显示错误提示
                 err_msg: '',         // 具体错误提示
@@ -157,7 +156,7 @@
                     password: [
                         { validator: validatePass, trigger: 'blur' }
                     ],
-                    password_confirm: [
+                    password_conform: [
                         { validator: validatePass2, trigger: 'blur' }
                     ]
                 }
