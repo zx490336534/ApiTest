@@ -17,8 +17,13 @@ import datetime
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 LOGPATH = os.path.join(BASE_DIR, 'logs')
-if not os.path.exists(LOGPATH):
-    os.mkdir(LOGPATH)
+# 测试报告HTML文件所在目录
+REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
+# 测试yaml文件所在目录
+SUITES_DIR = os.path.join(BASE_DIR, 'suites')
+for i in [LOGPATH, REPORTS_DIR, SUITES_DIR]:
+    if not os.path.exists(i):
+        os.mkdir(i)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -220,12 +225,6 @@ JWT_AUTH = {
 CORS_ORIGIN_ALLOW_ALL = True  # 所有域名都允许，默认False
 
 CORS_ALLOW_CREDENTIALS = True  # 语序跨域时携带Cookie，默认False
-
-# 测试报告HTML文件所在目录
-REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
-
-# 测试yaml文件所在目录
-SUITES_DIR = os.path.join(BASE_DIR, 'suites')
 
 # 收集静态文件
 # 1. 在项目根路径下创建static文件夹

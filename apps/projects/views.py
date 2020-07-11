@@ -75,10 +75,9 @@ class ProjectsViewSet(ModelViewSet):
     @action(methods=['post'], detail=True)
     def run(self, request, pk=None):
         instance = self.get_object()
-        serializer = self.get_serializer(instance, data=request.data)
-        serializer.is_valid(raise_exception=True)
-        datas = serializer.validated_data
-        env_id = datas.get('env_id')  # 获取环境变量env_id
+        serializer = self.get_serializer(instance)
+        datas = serializer.data
+        env_id = request.data.get('env_id')  # 获取环境变量env_id
 
         # 创建测试用例所在目录名
         testcase_dir_path = os.path.join(settings.SUITES_DIR,
