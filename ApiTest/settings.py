@@ -16,6 +16,9 @@ import datetime
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+LOGPATH = os.path.join(BASE_DIR, 'logs')
+if not os.path.exists(LOGPATH):
+    os.mkdir(LOGPATH)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -90,15 +93,11 @@ WSGI_APPLICATION = 'ApiTest.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ApiTest',
-        'USER': 'my_django',
-        'PASSWORD': '123456',
+        'USER': 'root',
+        'PASSWORD': 'zx660644',
         'HOST': 'localhost',
         'PORT': 3306
     }
@@ -219,13 +218,7 @@ JWT_AUTH = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True  # 所有域名都允许，默认False
-# CORS_ORIGIN_WHITELIST = [
-#     # 指定可以访问后端的域名
-#     "http://127.0.0.1:8080",
-#     "http://127.0.0.1:8000",
-#     "http://localhost:8080",
-#     "http://localhost:8000",
-# ]
+
 CORS_ALLOW_CREDENTIALS = True  # 语序跨域时携带Cookie，默认False
 
 # 测试报告HTML文件所在目录

@@ -25,7 +25,7 @@ schema_view = get_schema_view(
     openapi.Info(
         title="API接口文档平台",  # 必传
         default_version='v1',  # 必传
-        description="这是一个美轮美奂的接口文档",
+        description="这是一份接口文档",
         terms_of_service="http://api.keyou.site",
         contact=openapi.Contact(email="490336534@qq.com"),
         license=openapi.License(name="BSD License"),
@@ -46,8 +46,7 @@ urlpatterns = [
     path('', include('testsuits.urls')),
     path('', include('summary.urls')),
     path('docs/', include_docs_urls(title='测试平台接口文档',
-                                    description='这是一个美轮美奂的接口文档平台')),
-
+                                    description='这是一份接口测试平台文档')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
