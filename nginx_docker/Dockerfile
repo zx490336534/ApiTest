@@ -18,5 +18,5 @@ COPY configs/nginx.conf /etc/nginx/nginx.conf
 COPY configs/supervisord.conf /etc/supervisord.conf
 
 VOLUME /var/log/nginx/
-EXPOSE 80 8000 443
+EXPOSE 80 8000 443 9000
 CMD ["supervisord"]
