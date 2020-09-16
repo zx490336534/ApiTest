@@ -12,8 +12,6 @@ services:
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
       - mysql_db:/var/lib/mysql
-      - /etc/timezone:/etc/timezone
-      - /etc/localtime:/etc/localtime
     # 指定容器重启的策略
     restart: always
     # 指定环境变量
@@ -46,8 +44,6 @@ services:
     volumes:
       - logs:/var/log/nginx/
       - web:/var/www/html/
-      - /etc/timezone:/etc/timezone
-      - /etc/localtime:/etc/localtime
 
 # 指定容器使用的数据卷
 volumes:

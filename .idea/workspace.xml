@@ -24,7 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="docker compose运行调整">
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="修改ngnix基础镜像">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -204,7 +204,7 @@
       <workItem from="1594472596042" duration="14236000" />
       <workItem from="1594517230454" duration="2969000" />
       <workItem from="1595373592979" duration="34000" />
-      <workItem from="1600260863708" duration="5150000" />
+      <workItem from="1600260863708" duration="5947000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -325,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600266713367</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改ngnix基础镜像">
+      <created>1600267566570</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600267566570</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +368,8 @@
     <MESSAGE value="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1" />
     <MESSAGE value="调整前后端文件位置" />
     <MESSAGE value="docker compose运行调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker compose运行调整" />
+    <MESSAGE value="修改ngnix基础镜像" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改ngnix基础镜像" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment" timestamp="1594479044108">
@@ -440,10 +448,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600263903480" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600266715619">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600267570443">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600266715619" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600267570443" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
