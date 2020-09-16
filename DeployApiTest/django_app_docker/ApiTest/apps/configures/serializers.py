@@ -8,7 +8,7 @@
 """
 from rest_framework import serializers
 from interfaces.models import Interfaces
-from utils.validates import whether_existed_project_id, whether_existed_interface_id
+from backend.utils.validates import whether_existed_project_id, whether_existed_interface_id
 from .models import Configures
 
 

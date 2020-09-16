@@ -13,7 +13,7 @@ from .models import Testsuits
 from envs.models import Envs
 from .serializers import TestsuitsSerializer, TestsuitsRunSerializer
 from .utils import modify_output, get_testcases_by_interface_ids
-from utils import common
+from backend.utils import common
 
 
 class TestsuitsViewSet(ModelViewSet):

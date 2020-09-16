@@ -2,9 +2,8 @@ from django.contrib.auth.models import User
 from rest_framework.generics import CreateAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-from apps.user.serializers import RegisterSerializer
+from backend.apps import RegisterSerializer
 
 
 class RegisterView(CreateAPIView):

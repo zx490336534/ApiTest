@@ -2,3 +2,6 @@ env/
 venv/
 .idea/
 .pyc
+/backend/logs/
+/backend/reports/
+/backend/suites/

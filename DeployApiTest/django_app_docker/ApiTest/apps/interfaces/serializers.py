@@ -4,7 +4,7 @@ from rest_framework import serializers
 from interfaces.models import Interfaces
 from projects.models import Projects
 from projects.serializers import ProjectModelSerializer
-from utils import validates
+from backend.utils import validates
 
 
 class InterfaceModelSerializer(serializers.ModelSerializer):

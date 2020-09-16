@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
-from testcases.models import Testcases
+from testcases import Testcases
 
 
 def modify_output(datas):

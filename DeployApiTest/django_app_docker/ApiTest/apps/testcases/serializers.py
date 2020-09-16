@@ -8,7 +8,7 @@
 """
 from rest_framework import serializers
 from interfaces.models import Interfaces
-from utils import validates
+from backend.utils import validates
 from .models import Testcases
 
 

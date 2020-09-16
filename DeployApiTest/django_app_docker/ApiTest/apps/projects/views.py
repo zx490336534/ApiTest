@@ -12,7 +12,7 @@ from .utils import get_count_by_project
 from interfaces.models import Interfaces
 from testcases.models import Testcases
 from envs.models import Envs
-from utils import common
+from backend.utils import common
 
 
 class ProjectsViewSet(ModelViewSet):

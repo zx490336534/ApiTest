@@ -2,7 +2,7 @@
 from rest_framework import serializers
 from .models import Testsuits
 from projects.models import Projects
-from utils import validates
+from backend.utils import validates
 
 
 class TestsuitsSerializer(serializers.ModelSerializer):

@@ -5,13 +5,13 @@ from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import permissions
 
-from ApiTest import settings
+from backend.ApiTest import settings
 from envs.models import Envs
 from .models import Testcases
 from interfaces.models import Interfaces
 from rest_framework.decorators import action
 from .serializers import TestcasesSerializer, TestcasesRunSerializer
-from utils import handle_datas, common
+from backend.utils import handle_datas, common
 
 
 class TestcasesViewSet(ModelViewSet):

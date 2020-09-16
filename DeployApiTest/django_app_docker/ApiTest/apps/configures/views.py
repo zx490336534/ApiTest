@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from .models import Configures
 from .serializers import ConfiguresSerializer
 from interfaces.models import Interfaces
-from utils import handle_datas
+from backend.utils import handle_datas
 
 
 class ConfiguresViewSet(ModelViewSet):

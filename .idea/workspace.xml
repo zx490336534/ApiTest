@@ -15,46 +15,6 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:DeployApiTest" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:DeployApiTest" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:django_app_docker" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:DeployApiTest" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:django_app_docker" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:ApiTest" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -64,32 +24,207 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="运行项目失败修复">
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ApiTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApiTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/403.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/403.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/404.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/BuiltinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/BuiltinList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/EnvAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/EnvAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/EnvList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/EnvList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/Register.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ReportList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ReportList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ReportView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/ReportView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteAdd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiTest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiTest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiTest/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/configures/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/debugtalks/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/debugtalks/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/envs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/envs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/interfaces/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/interfaces/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/projects/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/projects/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/reports/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/reports/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/summary/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/summary/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testcases/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/testsuits/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testsuits/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/color-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/color-dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/theme-green/color-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/color-green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/theme-green/fonts/element-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/fonts/element-icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/theme-green/fonts/element-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/fonts/element-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/css/theme-green/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/img/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/img/img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/img/lemon_log.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/lemon_log.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Tags.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/bus.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/bus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/common/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/403.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/403.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/BuiltinEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/BuiltinEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/BuiltinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/BuiltinList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ConfigureList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/EnvAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/EnvAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/EnvList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/EnvList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/InterfaceAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/InterfaceList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/InterfaceList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ProjectAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ProjectList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ProjectList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ReportList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ReportList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/ReportView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ReportView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestcaseList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/components/page/TestsuiteList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lemon-test/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mytest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/01_tb_projects.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/02_tb_interfaces.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/03_tb_testcases.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/04_tb_configures.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/05_tb_testsuits.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/06_tb_reports.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/07_tb_debugtalks.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/08_tb_envs.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/create_user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/base_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/base_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/handle_datas.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/handle_datas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jwt_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/jwt_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/timeoperator.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/timeoperator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/validates.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/utils/validates.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,11 +258,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
-  </component>
   <component name="ProjectId" id="1eXevKG7Gj31xCefhlgGDhmu2Dn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -135,10 +265,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DeployApiTest/django_app_docker/ApiTest" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -146,9 +281,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../DeployApiTest/django_app_docker/ApiTest" />
       <recent name="$PROJECT_DIR$/apps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
@@ -159,22 +297,63 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="ApiTest.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="" />
+      <option name="host" value="127.0.0.1" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DeployApiTest: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="DeployApiTest/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="DeployApiTest.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="DeployApiTest/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="DeployApiTest.django_app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="django_app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="DeployApiTest/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="django_app_docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="DeployApiTest/django_app_docker/Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -187,9 +366,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django Server.ApiTest" />
+      <item itemvalue="Docker.DeployApiTest.db: Compose Deployment" />
+      <item itemvalue="Docker.DeployApiTest.django_app: Compose Deployment" />
+      <item itemvalue="Docker.DeployApiTest: Compose Deployment" />
+      <item itemvalue="Docker.django_app_docker/Dockerfile" />
+      <item itemvalue="npm.dev" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
+        <item itemvalue="Docker.DeployApiTest: Compose Deployment" />
+        <item itemvalue="Docker.DeployApiTest.django_app: Compose Deployment" />
+        <item itemvalue="Docker.DeployApiTest.db: Compose Deployment" />
+        <item itemvalue="Docker.django_app_docker/Dockerfile" />
+        <item itemvalue="Docker.DeployApiTest: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +400,10 @@
       <workItem from="1572529864118" duration="3002000" />
       <workItem from="1572608370393" duration="2956000" />
       <workItem from="1572965540083" duration="3100000" />
-      <workItem from="1594472596042" duration="4874000" />
+      <workItem from="1594472596042" duration="14236000" />
+      <workItem from="1594517230454" duration="2969000" />
+      <workItem from="1595373592979" duration="34000" />
+      <workItem from="1600260863708" duration="1425000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -295,7 +489,28 @@
       <option name="project" value="LOCAL" />
       <updated>1594477060453</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="点击运行后 灰色遮挡部分去除">
+      <created>1594477607894</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594477607894</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Pycharm配置">
+      <created>1594478615972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1594478615972</updated>
+    </task>
+    <task id="LOCAL-00015" summary="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1">
+      <created>1594554464001</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594554464001</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +526,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
@@ -325,9 +541,28 @@
     <MESSAGE value="修改背景图" />
     <MESSAGE value="修改密码确认字段拼写错误" />
     <MESSAGE value="运行项目失败修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="运行项目失败修复" />
+    <MESSAGE value="点击运行后 灰色遮挡部分去除" />
+    <MESSAGE value="Pycharm配置" />
+    <MESSAGE value="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment" timestamp="1594479044108">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment/0.23.1440.877@0.23.1440.877" timestamp="1594479044108" />
+    <state x="485" y="179" key="#Docker" timestamp="1594517451225">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="485" y="179" key="#Docker/0.23.1440.877@0.23.1440.877" timestamp="1594517451225" />
+    <state x="484" y="179" key="#New_Docker_Connection" timestamp="1594517428031">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="484" y="179" key="#New_Docker_Connection/0.23.1440.877@0.23.1440.877" timestamp="1594517428031" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600261744219">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600261744219" />
     <state x="225" y="321" width="1215" height="579" key="#xdebugger.evaluate" timestamp="1594476943199">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -336,49 +571,69 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="511" height="466" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1594476757704" />
-    <state width="1398" height="299" key="GridCell.Tab.0.bottom" timestamp="1594476985203">
+    <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog" timestamp="1600261445444">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594476985203" />
-    <state width="1398" height="299" key="GridCell.Tab.0.center" timestamp="1594476985202">
+    <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600261445438" />
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600261736744">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594476985202" />
-    <state width="1398" height="299" key="GridCell.Tab.0.left" timestamp="1594476985202">
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600261736744" />
+    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600261736743">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594476985202" />
-    <state width="1398" height="299" key="GridCell.Tab.0.right" timestamp="1594476985203">
+    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600261736743" />
+    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600261736743">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594476985203" />
-    <state width="1398" height="299" key="GridCell.Tab.1.bottom" timestamp="1594476952315">
+    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600261736743" />
+    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600261736743">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594476952315" />
-    <state width="1398" height="299" key="GridCell.Tab.1.center" timestamp="1594476952314">
+    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600261736743" />
+    <state width="1398" height="299" key="GridCell.Tab.1.bottom" timestamp="1594517195218">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594476952314" />
-    <state width="1398" height="299" key="GridCell.Tab.1.left" timestamp="1594476952313">
+    <state width="1398" height="299" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594517195218" />
+    <state width="1398" height="299" key="GridCell.Tab.1.center" timestamp="1594517195216">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594476952313" />
-    <state width="1398" height="299" key="GridCell.Tab.1.right" timestamp="1594476952315">
+    <state width="1398" height="299" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594517195216" />
+    <state width="1398" height="299" key="GridCell.Tab.1.left" timestamp="1594517195215">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594476952315" />
-    <state x="540" y="23" width="900" height="722" key="SettingsEditor" timestamp="1594473815880">
+    <state width="1398" height="299" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594517195215" />
+    <state width="1398" height="299" key="GridCell.Tab.1.right" timestamp="1594517195216">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="540" y="23" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1594473815880" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1594477064963">
+    <state width="1398" height="299" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594517195216" />
+    <state x="487" y="171" key="RollbackChangesDialog" timestamp="1594554392113">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1594477064963" />
+    <state x="487" y="171" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1594554392113" />
+    <state x="297" y="29" width="900" height="722" key="SettingsEditor" timestamp="1594480308780">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1594480308780" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1594554466135">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1594554466135" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="720" height="438" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1594476099758" />
+    <state x="419" y="94" width="604" height="735" key="find.popup" timestamp="1600261702154">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="419" y="94" width="604" height="735" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1600261702154" />
+    <state x="405" y="257" key="git4idea.merge.GitPullDialog" timestamp="1600260873741">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="405" y="257" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1600260873741" />
+    <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600261037305">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1600261037305" />
   </component>
 </project>

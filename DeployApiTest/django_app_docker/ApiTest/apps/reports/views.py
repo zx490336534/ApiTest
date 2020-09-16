@@ -10,7 +10,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework import permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from reports.utils import format_output, get_file_contents
+from reports import format_output, get_file_contents
 from .models import Reports
 from .serializers import ReportsSerializer
 
