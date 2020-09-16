@@ -24,662 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="调整前后端文件位置">
-      <change beforePath="$PROJECT_DIR$/.idea/ApiTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApiTest.iml" afterDir="false" />
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="docker compose运行调整">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/base/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/ApiTest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/get_static.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/ApiTest/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/ApiTest/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/ApiTest/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/configures/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/debugtalks/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/envs/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/interfaces/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/projects/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/reports/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/summary/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testcases/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/testsuits/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/apps/user/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/autocomplete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/responsive_rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/calendar-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-changelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-viewlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/icon-yes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/inline-delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/selector-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/tooltag-add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/SelectBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/collapse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/jquery.init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/popup_response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/urlify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/app.3e77d857.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-13bc7234.d43d8994.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-17bb5f40.7bfa8d7e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-319e14c6.f4881ea6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-31f1f646.2df5a263.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-34102914.f01e96a1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-48e43c7e.6e220564.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-4a188d15.e5dfa77f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-4b8f2110.8fef1c62.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-4b95f73c.840c2acc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-4d179aa0.e9d8e637.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-510dba3e.2189cf26.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-53d1b573.f1866d48.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-6a3474c4.411d6bdd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-6bf387ab.7c562648.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-9ec0731e.8389da3e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-c596fa5c.7d5ab11b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-ccfa7ea8.6c23c2a3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-e4889312.faf94182.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-e56bec40.4ceb3bcd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-e6d6f91c.4c4c6628.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-f3e38f04.9020fbfe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-ff7cdef6.20901964.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/css/chunk-vendors.45ab9bc1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/immutable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/insQ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/redoc-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/redoc-old/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/redoc/redoc-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/redoc/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/absolute-path.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-dist/swagger-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/swagger-ui-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/drf-yasg/url-polyfill.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/fonts/element-icons.535877f5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/fonts/element-icons.732389de.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/img/bg1.62063960.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/img/img.146655c9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/img/lemon_log.1b0f01cc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/img/logo.3eee1364.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/app.ed1a7046.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-0299ceb2.61ffe148.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-13bc7234.bf324c00.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-17bb5f40.6c013f34.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-319e14c6.9af6c5f5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-31f1f646.f9f823f0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-34102914.f64b9b31.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-48e43c7e.47a3acc0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-4a188d15.6273bd26.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-4b8f2110.6d6cd6f0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-4b95f73c.5d522c0e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-4d179aa0.74a92da8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-510dba3e.e660c2a9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-53d1b573.5524bc6d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-5d22da76.37927462.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-6a3474c4.9cfd8dfc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-6bf387ab.33394590.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-78f2121a.c3449b13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-9ec0731e.e9c90924.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-ac190704.a0a7ab8b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-c596fa5c.ea72f0f7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-c9c0850c.38f1c741.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-ccfa7ea8.7b6a0562.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-e4889312.b341882f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-e56bec40.2d0f13f2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-e6d6f91c.9b3fb17a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-f3e38f04.e0152da0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-f80df70e.3ff0d3e1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-ff7cdef6.eb0f7a2f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/js/chunk-vendors.05d824c8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/css/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/js/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/ajax-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/csrf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/front_ends/static/rest_framework/js/prettify-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/logs/mytest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/01_tb_projects.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/02_tb_interfaces.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/03_tb_testcases.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/04_tb_configures.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/05_tb_testsuits.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/06_tb_reports.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/07_tb_debugtalks.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/08_tb_envs.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/test/create_user.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/base_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/handle_datas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/jwt_handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/pagination.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/timeoperator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/ApiTest/utils/validates.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/docker-entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/django_app_docker/gunicorn_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/gunicorn_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/configs/default.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/configs/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/configs/supervisord.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/autocomplete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/responsive_rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/calendar-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-changelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-viewlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/icon-yes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/inline-delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/selector-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/tooltag-add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/SelectBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/collapse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/jquery.init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/popup_response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/urlify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/app.3e77d857.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/app.f268d7b2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-03082647.2afb5b04.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-13bc7234.d43d8994.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-142e904a.859ddffc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-17bb5f40.7bfa8d7e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-1a2fef31.77428ec3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-20bf9d70.ebb07cd7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-2340bd7e.e33099c8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-28170625.1affdf52.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-319e14c6.f4881ea6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-31f1f646.2df5a263.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-34102914.f01e96a1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-39d3731b.004e27d9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-3d2677e8.24f07e97.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-43163846.14f2a92d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-438a9d98.ff217d0c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-48e43c7e.6e220564.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-4a188d15.e5dfa77f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-4b8f2110.8fef1c62.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-4b95f73c.840c2acc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-4d179aa0.e9d8e637.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-510dba3e.2189cf26.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-53d1b573.f1866d48.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-6a3474c4.411d6bdd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-6bf387ab.7c562648.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-761ac52c.5039b284.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-782922a2.7afb97ea.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-7c99d573.226895d8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-7ed6feef.bda411d6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-80c2b28c.f5c5c286.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-830d2410.c2b9896d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-992c3c9a.7b29791c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-992e24fe.97ec7343.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-9ec0731e.8389da3e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-af529dfc.2ba52754.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-c1a1b98a.74543443.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-c596fa5c.7d5ab11b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-ccfa7ea8.6c23c2a3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-d20b627a.40e390b1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-e46629d4.849d0cd7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-e4889312.faf94182.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-e56bec40.4ceb3bcd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-e6d6f91c.4c4c6628.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-f3e38f04.9020fbfe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-ff7cdef6.20901964.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-vendors.45ab9bc1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/css/chunk-vendors.b80cec6e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/immutable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/insQ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/redoc-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/redoc-old/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/redoc/redoc-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/redoc/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/absolute-path.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/swagger-ui-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/drf-yasg/url-polyfill.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/fonts/element-icons.535877f5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/fonts/element-icons.732389de.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/img/bg1.62063960.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/img/bg1.a0aab590.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/img/bg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/img/img.146655c9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/img/lemon_log.1b0f01cc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/img/logo.3eee1364.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/app.ed1a7046.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/app.ee16f832.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-0299ceb2.61ffe148.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-03082647.7283e5f0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-13bc7234.bf324c00.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-142e904a.e437a8bb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-17bb5f40.6c013f34.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-1a2fef31.820f6477.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-20bf9d70.c5cd667a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-2340bd7e.254d8357.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-28170625.aab8ccef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-319e14c6.9af6c5f5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-31f1f646.f9f823f0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-34102914.f64b9b31.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-390b3b98.ff9f1f01.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-39d3731b.16bcbc51.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-3d2677e8.f515d196.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-41a30811.1a7ec813.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-43163846.652e7308.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-438a9d98.f66d5b03.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-48e43c7e.47a3acc0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-4a188d15.6273bd26.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-4b8f2110.6d6cd6f0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-4b95f73c.5d522c0e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-4d179aa0.74a92da8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-510dba3e.e660c2a9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-53d1b573.5524bc6d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-5d22da76.37927462.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-5d22da76.f4763711.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-6a3474c4.9cfd8dfc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-6bf387ab.33394590.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-761ac52c.d2b62cbc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-782922a2.8117b995.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-78f2121a.c3449b13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-7c99d573.cbb863c8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-7ed6feef.33da2467.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-80c2b28c.0dea38cf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-830d2410.65925af8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-9009690e.b6843cad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-992c3c9a.e87300e9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-992e24fe.23317989.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-9ec0731e.e9c90924.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-abf2ffec.e98260a5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-ac190704.a0a7ab8b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-af529dfc.503cfc38.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-c1a1b98a.eb1a0294.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-c596fa5c.ea72f0f7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-c9c0850c.38f1c741.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-ccfa7ea8.7b6a0562.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-d20b627a.ef20fb6b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-e233e4a2.4c14dcc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-e46629d4.886db3bd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-e4889312.b341882f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-e56bec40.2d0f13f2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-e6d6f91c.9b3fb17a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-f3e38f04.e0152da0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-f80df70e.3ff0d3e1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-ff7cdef6.eb0f7a2f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-vendors.05d824c8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/js/chunk-vendors.4a074398.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/css/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/js/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/ajax-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/csrf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeployApiTest/nginx_docker/dist/static/rest_framework/js/prettify-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -748,7 +95,7 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.web: Compose Deployment">
     <configuration name="ApiTest" type="Python.DjangoServer" factoryName="Django server">
       <module name="ApiTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -789,6 +136,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="web" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="nginx_docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -807,31 +167,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Django Server.ApiTest" />
       <item itemvalue="npm.build" />
-      <item itemvalue="npm.dev" />
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.nginx_docker/Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.nginx_docker/Dockerfile" />
         <item itemvalue="npm.build" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -854,7 +204,7 @@
       <workItem from="1594472596042" duration="14236000" />
       <workItem from="1594517230454" duration="2969000" />
       <workItem from="1595373592979" duration="34000" />
-      <workItem from="1600260863708" duration="4461000" />
+      <workItem from="1600260863708" duration="5150000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -968,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600263226052</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="docker compose运行调整">
+      <created>1600266713367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600266713367</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1003,7 +360,8 @@
     <MESSAGE value="Pycharm配置" />
     <MESSAGE value="需要安装的内容中增加PyMySQL，mysqlclient==2.0.1" />
     <MESSAGE value="调整前后端文件位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整前后端文件位置" />
+    <MESSAGE value="docker compose运行调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker compose运行调整" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment" timestamp="1594479044108">
@@ -1026,6 +384,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="123" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263840747" />
+    <state x="406" y="191" key="#docker-compose.yml:_Compose_Deployment" timestamp="1600266896197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="406" y="191" key="#docker-compose.yml:_Compose_Deployment/0.23.1440.877@0.23.1440.877" timestamp="1600266896197" />
     <state x="225" y="321" width="1215" height="579" key="#xdebugger.evaluate" timestamp="1594476943199">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -1078,10 +440,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600263903480" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600263230371">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600266715619">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600263230371" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600266715619" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

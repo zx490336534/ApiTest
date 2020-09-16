@@ -1,4 +1,4 @@
-FROM alpine-base:latest
+FROM alpine:latest
 LABEL maintainer='490336534@qq.com'
 LABEL description='ApiTest nginx'
 

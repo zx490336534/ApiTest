@@ -36,7 +36,7 @@ services:
   web:
     depends_on:
       - django_app
-    build: nginx_docker/
+    build: nginx_docker/.
     image: zhongxin1111/apitest-nginx
     restart: always
     # 端口映射
@@ -56,3 +56,4 @@ volumes:
   mysql_db:
   django_code:
   logs:
+  web:
