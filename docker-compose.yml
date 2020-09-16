@@ -1,0 +1,58 @@
+# 指定版本信息
+version: '3'
+
+# 指定服务(启动容器)
+services:
+  # 服务名:项目根目录小写_指定的服务名_服务个数的序号
+  # deploydjango_db_1
+  db:
+    # 指定镜像的名称
+    image: mariadb
+    # 覆盖默认的CMO,指定运行容器时(docker run)需要运行的命令或者参数
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - mysql_db:/var/lib/mysql
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
+    # 指定容器重启的策略
+    restart: always
+    # 指定环境变量
+    environment:
+      MYSQL_ROOT_PASSWORD: zx660644
+      MYSQL_DATABASE: test
+  django_app:
+    # 指定容器的启动依赖
+    # 只有当db容器启动后,再启动 django_app容器
+    depends_on:
+      - db
+    # 指定Dockerfile所在的路径
+    build: .
+    # 指定构建的镜像名
+    image: zhongxin1111/apitest-django
+    restart: always
+    volumes:
+      - logs:/usr/src/app/logs
+      - django_code:/usr/src/app/LearnDjango/
+  web:
+    depends_on:
+      - django_app
+    build: nginx_docker/
+    image: zhongxin1111/apitest-nginx
+    restart: always
+    # 端口映射
+    ports:
+      - "8866:80"
+      - "8000:8000"
+    volumes:
+      - logs:/var/log/nginx/
+      - web:/var/www/html/
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
+
+# 指定容器使用的数据卷
+volumes:
+  # deploydjango_mysql_db
+  # 数据卷名为:项目根目录小写_指定的数据卷名
+  mysql_db:
+  django_code:
+  logs:
