@@ -18,19 +18,19 @@ from utils import common
 class ProjectsViewSet(ModelViewSet):
     """
     list:
-    返回项目(多个)列表数据
+    返回「多个」项目列表数据
 
     create:
     创建项目
 
     retrieve:
-    返回项目(单个)详情数据
+    返回「单个」项目详情数据
 
     update:
-    更新(全)项目
+    更新「全」项目
 
     partial_update:
-    更新(部分)项目
+    更新「部分」项目
 
     destroy:
     删除项目

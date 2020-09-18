@@ -11,19 +11,19 @@ from envs.utils import handle_env
 class EnvsViewSet(ModelViewSet):
     """
     list:
-    返回环境变量（多个）列表数据
+    返回「多个」环境变量列表数据
 
     create:
     创建环境变量
 
     retrieve:
-    返回环境变量（单个）详情数据
+    返回「单个」环境变量详情数据
 
     update:
-    更新（全）环境变量
+    更新「全」环境变量
 
     partial_update:
-    更新（部分）环境变量
+    更新「部分」环境变量
 
     destroy:
     删除环境变量

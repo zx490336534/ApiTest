@@ -19,19 +19,19 @@ from utils import common
 class TestsuitsViewSet(ModelViewSet):
     """
     list:
-    返回套件（多个）列表数据
+    返回套件「多个」列表数据
 
     create:
     创建套件
 
     retrieve:
-    返回套件（单个）详情数据
+    返回套件「单个」详情数据
 
     update:
-    更新（全）套件
+    更新「全」套件
 
     partial_update:
-    更新（部分）套件
+    更新「部分」套件
 
     destroy:
     删除套件

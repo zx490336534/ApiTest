@@ -17,19 +17,19 @@ from utils import handle_datas, common
 class TestcasesViewSet(ModelViewSet):
     """
     list:
-    返回用例（多个）列表数据
+    返回「多个」用例列表数据
 
     create:
     创建用例
 
     retrieve:
-    返回用例（单个）详情数据
+    返回「单个」用例详情数据
 
     update:
-    更新（全）用例
+    更新「全」用例
 
     partial_update:
-    更新（部分）用例
+    更新「部分」用例
 
     destroy:
     删除用例

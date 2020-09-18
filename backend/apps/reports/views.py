@@ -18,19 +18,19 @@ from .serializers import ReportsSerializer
 class ReportsViewSet(ModelViewSet):
     """
     list:
-    返回测试报告（多个）列表数据
+    返回「多个」测试报告列表数据
 
     create:
     创建测试报告
 
     retrieve:
-    返回测试报告（单个）详情数据
+    返回「单个」测试报告详情数据
 
     update:
-    更新（全）测试报告
+    更新「全」测试报告
 
     partial_update:
-    更新（部分）测试报告
+    更新「部分」测试报告
 
     destroy:
     删除测试报告

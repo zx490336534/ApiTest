@@ -20,19 +20,19 @@ from utils import common
 class InterfacesViewSet(ModelViewSet):
     """
     list:
-    返回接口(多个)列表数据
+    返回「多个」接口列表数据
 
     create:
     创建接口
 
     retrieve:
-    返回接口(单个)详情数据
+    返回「单个」接口详情数据
 
     update:
-    更新(全)接口
+    更新「全」接口
 
     partial_update:
-    更新(部分)接口
+    更新「部分」接口
 
     destroy:
     删除接口

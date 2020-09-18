@@ -13,13 +13,13 @@ class DebugTalksViewSet(mixins.ListModelMixin,
                         GenericViewSet):
     """
     list:
-    返回debugtalk（多个）列表数据
+    返回「多个」debugtalk列表数据
 
     update:
-    更新（全）debugtalk
+    更新「全部」debugtalk
 
     partial_update:
-    更新（部分）debugtalk
+    更新「部分」debugtalk
     """
     queryset = DebugTalks.objects.filter(is_delete=False)
     serializer_class = DebugTalksSerializer

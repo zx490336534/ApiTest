@@ -11,19 +11,19 @@ from utils import handle_datas
 class ConfiguresViewSet(ModelViewSet):
     """
     list:
-    返回配置信息（多个）列表数据
+    返回「多个」配置信息列表数据
 
     create:
     创建配置信息
 
     retrieve:
-    返回配置信息（单个）详情数据
+    返回「单个」配置信息详情数据
 
     update:
-    更新（全）配置信息
+    「全」数据更新配置信息
 
     partial_update:
-    更新（部分）配置信息
+    「部分」数据更新配置信息
 
     destroy:
     删除配置信息
@@ -42,7 +42,6 @@ class ConfiguresViewSet(ModelViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         config_obj = self.get_object()
-        # 不建议使用eval()
         config_request = json.loads(config_obj.request, encoding='utf-8')
 
         # 处理请求头数据

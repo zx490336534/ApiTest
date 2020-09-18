@@ -9,14 +9,12 @@ from apps.user.serializers import RegisterSerializer
 
 class RegisterView(CreateAPIView):
     serializer_class = RegisterSerializer
-    # authentication_classes = (JSONWebTokenAuthentication,)
 
 
 class UsernameValidateView(APIView):
     """
     校验用户名
     """
-
     def get(self, request, username):
         data_dict = {
             "username": username,
