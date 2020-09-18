@@ -11,7 +11,8 @@
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
             </div>
-            <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange" stripe>
+            <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange"
+                      stripe>
                 <el-table-column type="selection" width="55" align="center"></el-table-column>
 
                 <!-- <el-table-column type="expand" label="更多">
@@ -38,16 +39,20 @@
 
                 <el-table-column label="操作" align="center">
                     <template slot-scope="scope">
-                        <el-button type="text" icon="el-icon-edit" @click="handleRun(scope.$index, scope.row)">运行</el-button>
+                        <el-button type="text" icon="el-icon-edit" @click="handleRun(scope.$index, scope.row)">运行
+                        </el-button>
                         <el-button type="text" icon="el-icon-edit" @click="linkTo(scope.row.id)">编辑</el-button>
-                        <el-button type="text" icon="el-icon-delete" class="red" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                        <el-button type="text" icon="el-icon-delete" class="red"
+                                   @click="handleDelete(scope.$index, scope.row)">删除
+                        </el-button>
                     </template>
                 </el-table-column>
             </el-table>
             <div class="pagination">
-                <el-pagination background @current-change="handleCurrentChange" 
-                @size-change="handleSizeChange" :page-sizes="[4, 5, 8, 10, 20]"
-                layout="total, sizes, prev, pager, next, jumper" :total="total_nums" :page-size="page_size">
+                <el-pagination background @current-change="handleCurrentChange"
+                               @size-change="handleSizeChange" :page-sizes="[4, 5, 8, 10, 20]"
+                               layout="total, sizes, prev, pager, next, jumper" :total="total_nums"
+                               :page-size="page_size">
                 </el-pagination>
             </div>
         </div>
@@ -94,10 +99,10 @@
 
                     <el-select v-model="env_id" clearable placeholder="请选择">
                         <el-option
-                            v-for="item in envs_id_names"
-                            :key="item.id"
-                            :label="item.name"
-                            :value="item.id">
+                                v-for="item in envs_id_names"
+                                :key="item.id"
+                                :label="item.name"
+                                :value="item.id">
                         </el-option>
                     </el-select>
 
@@ -113,7 +118,8 @@
 </template>
 
 <script>
-    import { testsuites_list, delete_testsuite, envs_names, run_by_testsuite } from '../../api/api';
+    import {testsuites_list, delete_testsuite, envs_names, run_by_testsuite} from '../../api/api';
+
     export default {
         name: 'basetable',
         data() {
@@ -134,7 +140,7 @@
 
                 idx: -1,   // 在tableData数组中的索引值 
                 id: -1,    // 在数据库中的真实索引值
-                
+
                 env_id: '',
                 envs_id_names: [],  // 返回的环境变量数据
             }
@@ -179,11 +185,11 @@
                     'page': this.cur_page,
                     'size': this.page_size
                 })
-                .then(response => {
-                    this.tableData = response.data.results;
-                    this.cur_page = response.data.current_page_num || 1;
-                    this.total_nums = response.data.count || 1;
-                })
+                    .then(response => {
+                        this.tableData = response.data.results;
+                        this.cur_page = response.data.current_page_num || 1;
+                        this.total_nums = response.data.count || 1;
+                    })
             },
             handleEdit(index, row) {
                 this.idx = index;   // 当前修改的数据, 在tableData数组中的索引值
@@ -209,12 +215,12 @@
                 for (let i = 0; i < length; i++) {
                     str += this.multipleSelection[i].name + ' ';
                     delete_testsuite(this.multipleSelection[i].id)
-                    .then(response => {
-                        
-                    })
-                    .catch(error => {
-                        this.$message.error('服务器错误');
-                    })
+                        .then(response => {
+
+                        })
+                        .catch(error => {
+                            this.$message.error('服务器错误');
+                        })
                 }
 
                 this.$message.error('删除了' + str);
@@ -229,70 +235,70 @@
                 var datas = Object.assign({}, this.form);
                 delete datas.project;
                 edit_interface(this.id, datas)
-                .then(response => {
-                    this.editVisible = false;
-                    this.$message.success(`修改【 ${this.form.name} 】成功`);
-                    if(this.tableData[this.idx].id === this.id){
-                        this.$set(this.tableData, this.idx, this.form);
-                    }else{
-                        for(let i = 0; i < this.tableData.length; i++){
-                            if(this.tableData[i].id === this.id){
-                                this.$set(this.tableData, i, this.form);
-                                return ;
+                    .then(response => {
+                        this.editVisible = false;
+                        this.$message.success(`修改【 ${this.form.name} 】成功`);
+                        if (this.tableData[this.idx].id === this.id) {
+                            this.$set(this.tableData, this.idx, this.form);
+                        } else {
+                            for (let i = 0; i < this.tableData.length; i++) {
+                                if (this.tableData[i].id === this.id) {
+                                    this.$set(this.tableData, i, this.form);
+                                    return;
+                                }
                             }
                         }
-                    }
-                })
-                .catch(error => {
-                    this.editVisible = false;
-                    this.$message.error('服务器错误');
-                })
+                    })
+                    .catch(error => {
+                        this.editVisible = false;
+                        this.$message.error('服务器错误');
+                    })
 
             },
             // 确定删除
-            deleteRow(){
+            deleteRow() {
                 delete_testsuite(this.id)
-                .then(response => {
-                    // 项目删除成功
-                    this.$message.success('删除成功');
-                    this.delVisible = false;
-                    if(this.tableData[this.idx].id === this.id){
-                        this.tableData.splice(this.idx, 1);
-                    }else{
-                        for(let i = 0; i < this.tableData.length; i++){
-                            if(this.tableData[i].id === this.id){
-                                this.tableData.splice(i, 1);
-                                return ;
+                    .then(response => {
+                        // 项目删除成功
+                        this.$message.success('删除成功');
+                        this.delVisible = false;
+                        if (this.tableData[this.idx].id === this.id) {
+                            this.tableData.splice(this.idx, 1);
+                        } else {
+                            for (let i = 0; i < this.tableData.length; i++) {
+                                if (this.tableData[i].id === this.id) {
+                                    this.tableData.splice(i, 1);
+                                    return;
+                                }
                             }
                         }
-                    }
-                })
-                .catch(error => {
-                    this.$message.error('服务器错误');
-                })
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
             // 获取所有环境变量的ID和名称
-            getEnvsIdNames(){
+            getEnvsIdNames() {
                 envs_names()
-                .then(response => {
-                    this.envs_id_names = response.data;   // 将返回的环境变量数据赋值给envs_id_names
-                })
-                .catch(error => {
-                    this.$message.error('服务器错误');
-                })
+                    .then(response => {
+                        this.envs_id_names = response.data;   // 将返回的环境变量数据赋值给envs_id_names
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
-            confirmRun(){
+            confirmRun() {
                 run_by_testsuite(this.id, this.env_id)
-                .then(response => {
-					this.runVisible=false;
-                    this.$router.push({ path: `/reports_view/${response.data.id}` })
-                })
-                .catch(error => {
-                    this.$message.error('服务器错误');
-                })
+                    .then(response => {
+                        this.runVisible = false;
+                        this.$router.push({path: `/reports_view/${response.data.id}`})
+                    })
+                    .catch(error => {
+                        this.$message.error('服务器错误');
+                    })
             },
             linkTo(id) {
-                this.$router.push({ path: `/testsuites_edit/${id}` });
+                this.$router.push({path: `/testsuites_edit/${id}`});
             },
         }
     }
@@ -312,18 +318,22 @@
         width: 300px;
         display: inline-block;
     }
-    .del-dialog-cnt{
+
+    .del-dialog-cnt {
         font-size: 16px;
         text-align: center
     }
-    .table{
+
+    .table {
         width: 100%;
         font-size: 14px;
     }
-    .red{
+
+    .red {
         color: #ff0000;
     }
-    .mr10{
+
+    .mr10 {
         margin-right: 10px;
     }
 </style>

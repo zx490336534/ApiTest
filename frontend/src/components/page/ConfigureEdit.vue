@@ -145,7 +145,7 @@
         },
 
         name: 'baseform',
-        data: function() {
+        data: function () {
             return {
                 current_configure_id: null,
                 editVisible: false, // 新增配置弹框是否显示标识
@@ -442,7 +442,7 @@
         },
         watch: {
             monitorHeader: {
-                handler: function() {
+                handler: function () {
                     if (this.apiMsgData.header.length === 0) {
                         this.addTableRow('header');
                     }
@@ -454,7 +454,7 @@
                 deep: true
             },
             monitorGlobalVar: {
-                handler: function() {
+                handler: function () {
                     if (this.apiMsgData.globalVar.length === 0) {
                         this.addTableRow('globalVar');
                     }

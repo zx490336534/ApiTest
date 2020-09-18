@@ -11,7 +11,8 @@
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
             </div>
-            <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange" stripe>
+            <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange"
+                      stripe>
                 <el-table-column type="selection" width="55" align="center"></el-table-column>
 
                 <el-table-column type="index" label="序号" width="55" align="center"></el-table-column>
@@ -31,7 +32,9 @@
                 <el-table-column label="操作" align="center">
                     <template slot-scope="scope">
                         <el-button type="text" icon="el-icon-edit" @click="linkTo(scope.row.id)">编辑</el-button>
-                        <el-button type="text" icon="el-icon-delete" class="red" @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                        <el-button type="text" icon="el-icon-delete" class="red"
+                                   @click="handleDelete(scope.$index, scope.row)">删除
+                        </el-button>
                     </template>
                 </el-table-column>
             </el-table>
@@ -57,7 +60,8 @@
 </template>
 
 <script>
-    import { configures_list, delete_configure } from '../../api/api';
+    import {configures_list, delete_configure} from '../../api/api';
+
     export default {
         name: 'basetable',
         data() {
@@ -156,18 +160,18 @@
                 this.multipleSelection = val;
             },
             // 确定删除
-            deleteRow(){
+            deleteRow() {
                 delete_configure(this.id)
                     .then(response => {
                         this.$message.success('删除成功');
                         this.delVisible = false;
-                        if(this.tableData[this.idx].id === this.id){
+                        if (this.tableData[this.idx].id === this.id) {
                             this.tableData.splice(this.idx, 1);
-                        }else{
-                            for(let i = 0; i < this.tableData.length; i++){
-                                if(this.tableData[i].id === this.id){
+                        } else {
+                            for (let i = 0; i < this.tableData.length; i++) {
+                                if (this.tableData[i].id === this.id) {
                                     this.tableData.splice(i, 1);
-                                    return ;
+                                    return;
                                 }
                             }
                         }
@@ -177,7 +181,7 @@
                     })
             },
             linkTo(id) {
-                this.$router.push({ path: `/configures_edit/${id}` });
+                this.$router.push({path: `/configures_edit/${id}`});
             },
         }
     }
@@ -188,22 +192,27 @@
     .handle-box {
         margin-bottom: 20px;
     }
+
     .handle-input {
         width: 300px;
         display: inline-block;
     }
-    .del-dialog-cnt{
+
+    .del-dialog-cnt {
         font-size: 16px;
         text-align: center
     }
-    .table{
+
+    .table {
         width: 100%;
         font-size: 14px;
     }
-    .red{
+
+    .red {
         color: #ff0000;
     }
-    .mr10{
+
+    .mr10 {
         margin-right: 10px;
     }
 </style>
