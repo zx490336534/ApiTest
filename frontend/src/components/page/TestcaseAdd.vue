@@ -127,7 +127,7 @@
                     </el-table>
 
                     <el-tabs style="margin: 0 0 0 10px" v-model="bodyShow">
-                        <el-tab-pane label="Headers" name="first">
+                        <el-tab-pane label="Headers(请求头)" name="first">
                             <el-table :data="apiMsgData.header" size="mini" stripe :show-header="false"
                                       class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
                                 <el-table-column property="key" label="Key" header-align="center" minWidth="100">
@@ -152,7 +152,7 @@
                                 </el-table-column>
                             </el-table>
                         </el-tab-pane>
-                        <el-tab-pane label="Body" name="second" :disabled="apiMsgData.method === 'GET'">
+                        <el-tab-pane label="Body(请求体)" name="second" :disabled="apiMsgData.method === 'GET'">
                             <el-form :inline="true" class="demo-form-inline" style="margin-top: 10px">
                                 <el-radio-group v-model="apiMsgData.choiceType">
                                     <el-radio label="data">form-data</el-radio>
@@ -218,7 +218,7 @@
                                 </el-table-column>
                             </el-table>
                         </el-tab-pane>
-                        <el-tab-pane label="Extract" name="third">
+                        <el-tab-pane label="Extract(提取)" name="third">
                             <el-table :data="apiMsgData.extract" size="mini" stripe :show-header="false"
                                       class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
                                 <el-table-column property="key" label="Key" header-align="center" minWidth="100">
@@ -242,7 +242,7 @@
                                 </el-table-column>
                             </el-table>
                         </el-tab-pane>
-                        <el-tab-pane label="Assert" name="fourth">
+                        <el-tab-pane label="Assert(断言)" name="fourth">
                             <el-table :data="apiMsgData.validate" size="mini" stripe :show-header="false"
                                       class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
 
