@@ -26,27 +26,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="删除/etc/timezone:/etc/timezone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/configs/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_docker/configs/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="ApiTest" is-module-sdk="true">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -82,7 +68,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -96,7 +82,38 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.web: Compose Deployment">
+  <component name="RunManager" selected="Django Server.ApiTest">
+    <configuration name="01_tb_projects.sql and 7 more" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/backend/test/01_tb_projects.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/02_tb_interfaces.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/03_tb_testcases.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/04_tb_configures.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/05_tb_testsuits.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/06_tb_reports.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/07_tb_debugtalks.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/08_tb_envs.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="93ae8786-0a12-448f-aa09-9b2c7bcb0d37" namespace="schema/&quot;ApiTest&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01_tb_projects.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/backend/test/01_tb_projects.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="93ae8786-0a12-448f-aa09-9b2c7bcb0d37" namespace="schema/&quot;ApiTest&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_tb_interfaces.sql and 6 more" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/backend/test/02_tb_interfaces.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/03_tb_testcases.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/04_tb_configures.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/05_tb_testsuits.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/06_tb_reports.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/07_tb_debugtalks.sql" />
+      <script-file value="$PROJECT_DIR$/backend/test/08_tb_envs.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="93ae8786-0a12-448f-aa09-9b2c7bcb0d37" namespace="schema/&quot;ApiTest&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="ApiTest" type="Python.DjangoServer" factoryName="Django server">
       <module name="ApiTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,22 +138,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -150,19 +151,11 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="nginx_docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="DeployApiTest/nginx_docker/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build" />
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -170,19 +163,19 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.ApiTest" />
-      <item itemvalue="npm.build" />
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Docker.nginx_docker/Dockerfile" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
+      <item itemvalue="Database Script.01_tb_projects.sql" />
+      <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
+        <item itemvalue="Database Script.01_tb_projects.sql" />
         <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.nginx_docker/Dockerfile" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +199,7 @@
       <workItem from="1594517230454" duration="2969000" />
       <workItem from="1595373592979" duration="34000" />
       <workItem from="1600260863708" duration="6427000" />
+      <workItem from="1600432595861" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -381,6 +375,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="删除/etc/timezone:/etc/timezone" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="406" y="134" key="#01_tb_projects.sql" timestamp="1600432752544">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="406" y="134" key="#01_tb_projects.sql/0.23.1440.877@0.23.1440.877" timestamp="1600432752544" />
+    <state x="406" y="129" key="#01_tb_projects.sql_and_7_more" timestamp="1600432920084">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="406" y="129" key="#01_tb_projects.sql_and_7_more/0.23.1440.877@0.23.1440.877" timestamp="1600432920084" />
+    <state x="406" y="129" key="#02_tb_interfaces.sql_and_6_more" timestamp="1600432772258">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="406" y="129" key="#02_tb_interfaces.sql_and_6_more/0.23.1440.877@0.23.1440.877" timestamp="1600432772258" />
     <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment" timestamp="1594479044108">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -417,46 +423,46 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263839797" />
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600266547191">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1600433086535">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600266547191" />
-    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600266547190">
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600433086535" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1600433086534">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600266547190" />
-    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600266547189">
+    <state width="1398" height="285" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600433086534" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1600433086533">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600266547189" />
-    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600266547190">
+    <state width="1398" height="285" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600433086533" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1600433086534">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600266547190" />
-    <state width="1398" height="299" key="GridCell.Tab.1.bottom" timestamp="1594517195218">
+    <state width="1398" height="285" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600433086534" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1600433086537">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594517195218" />
-    <state width="1398" height="299" key="GridCell.Tab.1.center" timestamp="1594517195216">
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600433086537" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1600433086536">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594517195216" />
-    <state width="1398" height="299" key="GridCell.Tab.1.left" timestamp="1594517195215">
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1600433086536" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1600433086535">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594517195215" />
-    <state width="1398" height="299" key="GridCell.Tab.1.right" timestamp="1594517195216">
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1600433086535" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1600433086536">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="299" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594517195216" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1600433086536" />
     <state x="487" y="171" key="RollbackChangesDialog" timestamp="1594554392113">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="487" y="171" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1594554392113" />
-    <state x="297" y="29" width="900" height="722" key="SettingsEditor" timestamp="1600263903480">
+    <state x="297" y="29" width="900" height="722" key="SettingsEditor" timestamp="1600432687704">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600263903480" />
+    <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600432687704" />
     <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600298001422">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -481,6 +487,17 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1600261037305" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/apps/projects/views.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ApiTest$manage.coverage" NAME="manage Coverage Results" MODIFIED="1600263647365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
