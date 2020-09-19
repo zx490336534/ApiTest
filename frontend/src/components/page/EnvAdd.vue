@@ -14,7 +14,7 @@
                                   clearable></el-input>
                     </el-form-item>
 
-                    <el-form-item label="请求base url" prop="base_url" required>
+                    <el-form-item label="Base url" prop="base_url" required>
                         <el-input v-model="form.base_url" suffix-icon="el-icon-user-solid"
                                   @focus="clearValidate('tester')" clearable></el-input>
                     </el-form-item>
