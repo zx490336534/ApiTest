@@ -9,7 +9,8 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .models import Interfaces
-from .serializers import InterfacesSerializer, InterfaceRunSerializer
+from .serializers import InterfacesSerializer, InterfaceRunSerializer, \
+    InterfaceProjectSerializer
 from .utils import get_count_by_interface
 from testcases.models import Testcases
 from configures.models import Configures
@@ -112,4 +113,38 @@ class InterfacesViewSet(ModelViewSet):
         不同的action选择不同的序列化器
         :return:
         """
-        return InterfaceRunSerializer if self.action == 'run' else self.serializer_class
+        if self.action == 'run':
+            return InterfaceRunSerializer
+        elif self.action == 'all_interfaces_project':
+            return InterfaceProjectSerializer
+        else:
+            return self.serializer_class
+
+    @action(methods=['get'], detail=False)
+    def all_interfaces_project(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        new_list = [dict(i) for i in serializer.data]
+        new_data_list = [
+            {
+                "id": 0,
+                "value": "全部项目",
+                "label": "全部项目"
+            }
+        ]
+        exists_name_list = []
+        for i in new_list:
+            if i['project'] not in exists_name_list:
+                new_data_list.append({
+                    "id": i['project_id'],
+                    "value": i['project'],
+                    "label": i['project']
+                })
+                exists_name_list.append(i['project'])
+        return Response(new_data_list)
+
+    @action(methods=['get'], detail=False)
+    def all(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)

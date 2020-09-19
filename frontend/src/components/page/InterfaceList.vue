@@ -9,6 +9,14 @@
         <div class="container">
             <div class="handle-box">
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
+                <el-select v-model="project_options_value" placeholder="请选择所属项目" class="handle-del mr10">
+                    <el-option
+                            v-for="item in options"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                    </el-option>
+                </el-select>
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
             </div>
             <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange"
@@ -34,6 +42,13 @@
                 </el-table-column>
 
                 <el-table-column prop="project" label="所属项目" width="250">
+                    <template slot-scope="scope">
+                        <el-tag type=""
+                                @click="choice_project(scope.row)"
+                                effect="dark"
+                        >{{scope.row.project}}
+                        </el-tag>
+                    </template>
                 </el-table-column>
 
                 <el-table-column prop="create_time" label="创建时间" sortable align="center">
@@ -122,7 +137,9 @@
         delete_interface,
         edit_interface,
         envs_names,
-        run_by_interface
+        run_by_interface,
+        all_interfaces_project,
+        interfaces_list_all
     } from '../../api/api';
     import {
         O_RDONLY
@@ -132,7 +149,11 @@
         name: 'basetable',
         data() {
             return {
+                options: [],
+                project_options_value: "全部项目",
                 tableData: [],
+                AlltableData: [],
+                searchData: [],
                 cur_page: 1, // 当前页
                 page_size: 10, // 每页显示的数量
                 total_nums: 1, // 数据总条数
@@ -159,11 +180,18 @@
         },
         created() {
             this.getData(); // 获取接口数据
+            this.getAllData(); // 获取全部接口数据
             this.getEnvsIdNames(); // 获取环境变量ID和名称
+            this.getAllInterfacesProject(); // 获取全部已创建接口等项目名称
         },
         computed: {
             data() {
-                return this.tableData.filter((d) => {
+                if (this.select_word !== "") {
+                    this.searchData = this.AlltableData
+                } else {
+                    this.searchData = this.tableData
+                }
+                return this.searchData.filter((d) => {
                     let is_del = false;
                     for (let i = 0; i < this.del_list.length; i++) {
                         if (d.name === this.del_list[i].name) {
@@ -172,12 +200,26 @@
                         }
                     }
                     if (!is_del) {
-                        if (d.name.indexOf(this.select_word) > -1 ||
-                            d.project.indexOf(this.select_word) > -1 ||
-                            d.tester.indexOf(this.select_word) > -1
-                        ) {
-                            return d;
+                        if (this.project_options_value !== "全部项目") {
+                            if (d.project.indexOf(this.project_options_value) > -1) {
+                                if (
+                                    d.name.indexOf(this.select_word) > -1 ||
+                                    d.project.indexOf(this.select_word) > -1 ||
+                                    d.tester.indexOf(this.select_word) > -1
+                                ) {
+                                    return d;
+                                }
+                            }
+
+                        } else {
+                            if (d.name.indexOf(this.select_word) > -1 ||
+                                d.project.indexOf(this.select_word) > -1 ||
+                                d.tester.indexOf(this.select_word) > -1
+                            ) {
+                                return d;
+                            }
                         }
+
                     }
                 })
             }
@@ -193,7 +235,6 @@
                 this.getData();
             },
             getData() {
-
                 interfaces_list({
                     'page': this.cur_page,
                     'size': this.page_size
@@ -202,6 +243,19 @@
                         this.tableData = response.data.results;
                         this.cur_page = response.data.current_page_num || 1;
                         this.total_nums = response.data.count || 1;
+                    })
+            },
+            getAllData() {
+                interfaces_list_all()
+                    .then(response => {
+                        this.AlltableData = response.data.results;
+                    })
+            },
+            getAllInterfacesProject() {
+                all_interfaces_project()
+                    .then(response => {
+                        console.log(response.data);
+                        this.options = response.data
                     })
             },
             search() {
@@ -321,6 +375,14 @@
                     .catch(error => {
                         this.$message.error('服务器错误');
                     })
+            },
+            choice_project(row) {
+                if (this.project_options_value === row.project) {
+                    this.project_options_value = "全部项目"
+                } else {
+                    this.project_options_value = row.project;
+                }
+
             }
         }
     }

@@ -79,6 +79,11 @@ export const interfaces_list = params => {
     return axios.get(`${host}/interfaces/?page=` + params.page + '&size=' + params.size)
 };
 
+// 获取全部接口列表信息
+export const interfaces_list_all = () => {
+    return axios.get(`${host}/interfaces/all`)
+};
+
 // 删除某个接口
 export const delete_interface = id => {
     return axios.delete(`${host}/interfaces/` + id + '/')
@@ -153,6 +158,12 @@ export const configures_by_interface_id = id => {
 // 获取某个接口下的所有用例信息
 export const testcases_by_interface_id = id => {
     return axios.get(`${host}/interfaces/` + id + '/testcases/')
+};
+
+
+// 获取全部接口信息
+export const all_interfaces_project = () => {
+    return axios.get(`${host}/interfaces/all_interfaces_project/`)
 };
 
 // 新增用例

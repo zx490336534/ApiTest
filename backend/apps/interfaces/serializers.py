@@ -63,3 +63,11 @@ class InterfaceRunSerializer(serializers.ModelSerializer):
         model = Interfaces
         fields = ('id', 'env_id')
 
+
+class InterfaceProjectSerializer(serializers.ModelSerializer):
+    project = serializers.StringRelatedField(label='项目名称')
+    project_id = serializers.PrimaryKeyRelatedField(queryset=Projects.objects.all(), help_text='项目ID')
+
+    class Meta:
+        model = Interfaces
+        fields = ('project', 'project_id')
