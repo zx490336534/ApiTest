@@ -24,8 +24,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="删除/etc/timezone:/etc/timezone">
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="Base url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
     </list>
@@ -162,12 +163,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django Server.ApiTest" />
-      <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
       <item itemvalue="Database Script.01_tb_projects.sql" />
       <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
-      <item itemvalue="npm.dev" />
       <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
+      <item itemvalue="Django Server.ApiTest" />
+      <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
+      <item itemvalue="npm.dev" />
     </list>
     <recent_temporary>
       <list>

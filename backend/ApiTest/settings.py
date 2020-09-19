@@ -100,12 +100,12 @@ WSGI_APPLICATION = 'ApiTest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'ApiTest',
-        'NAME': 'test',
+        'NAME': 'ApiTest',
+        # 'NAME': 'test',
         'USER': 'root',
         'PASSWORD': 'zx660644',
-        # 'HOST': 'localhost',
-        'HOST': 'db',
+        'HOST': 'localhost',
+        # 'HOST': 'db',
         'PORT': 3306
     }
 }
