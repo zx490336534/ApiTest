@@ -226,6 +226,16 @@ export const configures_list = params => {
     return axios.get(`${host}/configures/?page=` + params.page + '&size=' + params.size)
 };
 
+// 获取配置列表信息
+export const configures_all_list = () => {
+    return axios.get(`${host}/configures/all`)
+};
+
+// 获取配置项目借款信息
+export const configures_all_interfaces_project = () => {
+    return axios.get(`${host}/configures/all_interfaces_project`)
+};
+
 // 删除某个配置
 export const delete_configure = id => {
     return axios.delete(`${host}/configures/` + id + '/')

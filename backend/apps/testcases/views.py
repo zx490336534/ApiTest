@@ -159,16 +159,6 @@ class TestcasesViewSet(ModelViewSet):
         queryset = self.filter_queryset(self.get_queryset())
         serializer = self.get_serializer(queryset, many=True)
         new_list = [dict(i) for i in serializer.data]
-        """
-        {
-          value: 'zhinan',
-          label: '指南',
-          children: [{
-            value: 'shejiyuanze',
-            label: '设计原则',
-          }]
-        }
-        """
         new_data = {}
         new_data_all = [{
             "value": '全部项目',

@@ -1,4 +1,6 @@
 import json
+
+from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import permissions
 from rest_framework.response import Response
@@ -67,3 +69,38 @@ class ConfiguresViewSet(ModelViewSet):
         }
 
         return Response(datas)
+
+    @action(methods=['get'], detail=False)
+    def all(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+
+    @action(methods=['get'], detail=False)
+    def all_interfaces_project(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        new_list = [dict(i) for i in serializer.data]
+        new_data = {}
+        new_data_all = [{
+            "value": '全部项目',
+            "label": '全部项目',
+            "children": [{
+                "value": '全部接口',
+                "label": '全部接口',
+            }]
+        }]
+        for i in new_list:
+            project = i["interface"]['project']
+            interface = i["interface"]['name']
+            if project in new_data and interface not in new_data[project]:
+                new_data[project].append(interface)
+            else:
+                new_data[project] = [interface]
+        for k, v in new_data.items():
+            new_data_all.append({
+                "value": k,
+                "label": k,
+                "children": [{"value": j, "label": j} for j in v]
+            })
+        return Response(new_data_all)
