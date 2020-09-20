@@ -9,6 +9,8 @@
         <div class="container">
             <div class="handle-box">
                 <el-button type="primary" icon="el-icon-delete" class="handle-del mr10" @click="delAll">批量删除</el-button>
+                <el-cascader v-model="project_options_value" :options="options" class="handle-del mr10"
+                             :show-all-levels="false"></el-cascader>
                 <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
             </div>
             <el-table :data="data" border class="table" ref="multipleTable" @selection-change="handleSelectionChange"
@@ -84,14 +86,20 @@
         testcases_list,
         delete_testcase,
         envs_names,
-        run_by_testcase
+        run_by_testcase,
+        testcases_list_all,
+        all_testcases_interfaces_project
     } from '../../api/api';
-    // import { O_RDONLY } from 'constants';
+
     export default {
         name: 'basetable',
         data() {
             return {
                 tableData: [],
+                AlltableData: [],
+                options: [],
+                searchData: [],
+                project_options_value: ["全部项目", "全部接口"],
                 cur_page: 1, // 当前页
                 page_size: 10, // 每页显示的数量
                 total_nums: 1, // 数据总条数
@@ -115,11 +123,18 @@
         },
         created() {
             this.getData(); // 获取项目数据
+            this.getAllData();// 获取全部项目数据
             this.getEnvsIdNames(); // 获取环境变量ID和名称
+            this.getAllInterfacesProject()
         },
         computed: {
             data() {
-                return this.tableData.filter((d) => {
+                if (this.select_word !== "") {
+                    this.searchData = this.AlltableData
+                } else {
+                    this.searchData = this.tableData
+                }
+                return this.searchData.filter((d) => {
                     let is_del = false;
                     for (let i = 0; i < this.del_list.length; i++) {
                         if (d.name === this.del_list[i].name) {
@@ -128,12 +143,24 @@
                         }
                     }
                     if (!is_del) {
-                        if (d.name.indexOf(this.select_word) > -1 ||
-                            d.interface.project.indexOf(this.select_word) > -1 ||
-                            d.interface.name.indexOf(this.select_word) > -1 ||
-                            d.author.indexOf(this.select_word) > -1
-                        ) {
-                            return d;
+                        if (this.project_options_value.indexOf("全部接口") === -1) {
+                            console.log(d);
+                            if (d.interface.project.indexOf(this.project_options_value[0]) > -1 && d.interface.name.indexOf(this.project_options_value[1]) > -1) {
+                                if (
+                                    d.name.indexOf(this.select_word) > -1 ||
+                                    d.tester.indexOf(this.select_word) > -1
+                                ) {
+                                    return d;
+                                }
+                            }
+                        } else {
+                            if (d.name.indexOf(this.select_word) > -1 ||
+                                d.interface.project.indexOf(this.select_word) > -1 ||
+                                d.interface.name.indexOf(this.select_word) > -1 ||
+                                d.author.indexOf(this.select_word) > -1
+                            ) {
+                                return d;
+                            }
                         }
                     }
                 })
@@ -159,6 +186,19 @@
                         this.tableData = response.data.results;
                         this.cur_page = response.data.current_page_num || 1;
                         this.total_nums = response.data.count || 1;
+                    })
+            },
+            getAllData() {
+                testcases_list_all()
+                    .then(response => {
+                        this.AlltableData = response.data.results;
+                    })
+            },
+            getAllInterfacesProject() {
+                all_testcases_interfaces_project()
+                    .then(response => {
+                        console.log(response.data);
+                        this.options = response.data
                     })
             },
             search() {
@@ -258,6 +298,7 @@
                     path: `/testcases_edit/${id}`
                 });
             },
+
         }
     }
 </script>

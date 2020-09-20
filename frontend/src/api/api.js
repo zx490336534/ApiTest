@@ -145,6 +145,11 @@ export const testcases_list = params => {
     return axios.get(`${host}/testcases/?page=` + params.page + '&size=' + params.size)
 };
 
+// 获取全部用例列表信息
+export const testcases_list_all = () => {
+    return axios.get(`${host}/testcases/all`)
+};
+
 // 删除某个用例
 export const delete_testcase = id => {
     return axios.delete(`${host}/testcases/` + id + '/')
@@ -185,6 +190,11 @@ export const get_detail_testcase = id => {
 // 修改用例
 export const update_testcase = (id, params) => {
     return axios.put(`${host}/testcases/` + id + '/', params)
+};
+
+// 获取全部用例的项目和接口信息
+export const all_testcases_interfaces_project = () => {
+    return axios.get(`${host}/testcases/all_interfaces_project/`)
 };
 
 // 获取测试报告列表信息

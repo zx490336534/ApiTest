@@ -80,3 +80,11 @@ class TestcasesRunSerializer(serializers.ModelSerializer):
     class Meta:
         model = Testcases
         fields = ('id', 'env_id')
+
+
+class ProjectInterfaceSerializer(serializers.ModelSerializer):
+    interface = InterfacesAnotherSerializer(help_text="所属接口和项目信息")
+
+    class Meta:
+        model = Testcases
+        fields = ('interface',)
