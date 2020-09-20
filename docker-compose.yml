@@ -11,7 +11,7 @@ services:
     # 覆盖默认的CMO,指定运行容器时(docker run)需要运行的命令或者参数
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
-      - /mysql_db/:/var/lib/mysql
+      - mysql_db:/var/lib/mysql
     # 指定容器重启的策略
     restart: always
     # 指定环境变量
@@ -42,8 +42,8 @@ services:
       - "8866:80"
       - "8000:8000"
     volumes:
-      - /nginx/logs:/var/log/nginx/
-      - /nginx/web:/var/www/html/
+      - logs:/var/log/nginx/
+      - web:/var/www/html/
 
 # 指定容器使用的数据卷
 volumes:
