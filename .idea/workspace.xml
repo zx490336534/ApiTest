@@ -25,235 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="修改打包内容">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/autocomplete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/responsive_rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/calendar-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-changelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-viewlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/icon-yes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/inline-delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/selector-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/tooltag-add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/SelectBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/collapse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/jquery.init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/popup_response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/urlify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/app.f268d7b2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-06f77e34.b98e175e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-07ad01a4.aeebe2b6.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-13899609.2fbcc925.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-1b17644e.0f9fec89.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-217eca0e.ddb92589.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-222ca90d.e271504d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-26ef48af.3b554ff7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-2e635a54.e47566e1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-34ea2f5b.a45cfe72.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-35b96a58.514b96dc.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-4173c0fd.bb8c06f7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-60684626.84eb78ca.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-64ece8d5.3fccd183.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-703b380e.41909ee1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-7421ee4b.5f9b5e0a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-7b780293.1326b836.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-840ac48a.626cf392.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-9813d45e.3be915b3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-c1a9cb02.9cfc2037.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-db9f031e.4ec75a55.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-ddedbcde.05212d2e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-dfe886e2.946f8087.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/css/chunk-vendors.b80cec6e.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/immutable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/insQ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/redoc-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/redoc-old/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/redoc/redoc-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/redoc/redoc.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/absolute-path.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-dist/swagger-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/swagger-ui-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/drf-yasg/url-polyfill.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/fonts/element-icons.535877f5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/fonts/element-icons.732389de.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/img/bg1.a0aab590.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/img/img.146655c9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/img/lemon_log.1b0f01cc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/app.3f07de2c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-06f77e34.2fea0af1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-07691598.0db26a4d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-07ad01a4.0de337c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-13899609.d7e0f13b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-15c9dcc1.ad8c7584.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-1b17644e.bc052665.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-217eca0e.aba8e0e2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-222ca90d.543ab298.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-26ef48af.1a5e4480.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-2e635a54.00696e58.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-34ea2f5b.03b95509.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-35b96a58.aee36d7b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-4173c0fd.52ac70bd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-5d22da76.c6d5e1fd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-60684626.f0c164fd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-64ece8d5.fe7c6c8b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-703b380e.4cd9cb00.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-7421ee4b.1da9fe2d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-7b780293.650abb2e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-840ac48a.be3ec797.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-9813d45e.e4edbae5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-abf2b17a.da8475a2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-c1a9cb02.843b2b75.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-db9f031e.2262c5ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-ddedbcde.9056a7ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-dfe886e2.34149280.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-e233e4a2.4c14dcc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-e7bbbfae.edff2289.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/js/chunk-vendors.2143972c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/css/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/js/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/img/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/ajax-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/csrf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_docker/dist/static/rest_framework/js/prettify-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -592,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600568424893</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改打包内容">
+      <created>1600573241272</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600573241272</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,22 +478,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263839797" />
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600573183573">
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600573309220">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600573183573" />
-    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600573183572">
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600573309220" />
+    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600573309218">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600573183572" />
-    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600573183572">
+    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600573309218" />
+    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600573309218">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600573183572" />
-    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600573183572">
+    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600573309218" />
+    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600573309220">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600573183572" />
+    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600573309220" />
     <state width="1398" height="323" key="GridCell.Tab.1.bottom" timestamp="1600568198884">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -739,10 +518,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600432687704" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600568429303">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600573245957">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600568429303" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600573245957" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

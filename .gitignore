@@ -5,3 +5,4 @@ venv/
 /backend/logs/
 /backend/reports/
 /backend/suites/
+/backend/front_ends/
