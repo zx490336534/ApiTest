@@ -24,8 +24,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="修改打包内容">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="忽略/backend/front_ends/">
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600573241272</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="忽略/backend/front_ends/">
+      <created>1600573447889</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1600573447889</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +430,8 @@
     <MESSAGE value="用例列表增加级联过滤" />
     <MESSAGE value="配置列表页面增加级联过滤" />
     <MESSAGE value="修改打包内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改打包内容" />
+    <MESSAGE value="忽略/backend/front_ends/" />
+    <option name="LAST_COMMIT_MESSAGE" value="忽略/backend/front_ends/" />
   </component>
   <component name="WindowStateProjectService">
     <state x="406" y="134" key="#01_tb_projects.sql" timestamp="1600432752544">
@@ -518,10 +526,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600432687704" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600573245957">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600573449507">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600573245957" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600573449507" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
