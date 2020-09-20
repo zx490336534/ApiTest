@@ -24,12 +24,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="用例列表增加级联过滤">
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="配置列表页面增加级联过滤">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/configures/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/configures/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/testcases/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/testcases/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ConfigureList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.ApiTest">
+  <component name="RunManager" selected="npm.build">
     <configuration name="01_tb_projects.sql and 7 more" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/backend/test/01_tb_projects.sql" />
       <script-file value="$PROJECT_DIR$/backend/test/02_tb_interfaces.sql" />
@@ -147,17 +145,14 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="web" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -175,16 +170,16 @@
       <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
       <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
       <item itemvalue="Django Server.ApiTest" />
-      <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
         <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
         <item itemvalue="Database Script.01_tb_projects.sql" />
-        <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -357,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600566908693</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="配置列表页面增加级联过滤">
+      <created>1600567906299</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1600567906299</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +409,8 @@
     <MESSAGE value="删除/etc/timezone:/etc/timezone" />
     <MESSAGE value="图片无法展示" />
     <MESSAGE value="用例列表增加级联过滤" />
-    <option name="LAST_COMMIT_MESSAGE" value="用例列表增加级联过滤" />
+    <MESSAGE value="配置列表页面增加级联过滤" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置列表页面增加级联过滤" />
   </component>
   <component name="WindowStateProjectService">
     <state x="406" y="134" key="#01_tb_projects.sql" timestamp="1600432752544">
@@ -462,22 +465,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263839797" />
-    <state width="1398" height="323" key="GridCell.Tab.0.bottom" timestamp="1600567826670">
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600568133361">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="323" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600567826670" />
-    <state width="1398" height="323" key="GridCell.Tab.0.center" timestamp="1600567826669">
+    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600568133361" />
+    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600568133360">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="323" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600567826669" />
-    <state width="1398" height="323" key="GridCell.Tab.0.left" timestamp="1600567826668">
+    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600568133360" />
+    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600568133358">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="323" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600567826668" />
-    <state width="1398" height="323" key="GridCell.Tab.0.right" timestamp="1600567826669">
+    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600568133358" />
+    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600568133360">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="323" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600567826669" />
+    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600568133360" />
     <state width="1398" height="323" key="GridCell.Tab.1.bottom" timestamp="1600567826672">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -502,10 +505,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600432687704" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600566910587">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600567953935">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600566910587" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600567953935" />
     <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -518,10 +521,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="405" y="257" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1600260873741" />
-    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1600567661450">
+    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1600568177425">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1600567661450" />
+    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1600568177425" />
     <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600261037305">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
