@@ -1,3 +1,4 @@
+mkdir /nginx/
 mkdir /nginx/logs
 mkdir /nginx/web/
 mkdir /mysql_db/
