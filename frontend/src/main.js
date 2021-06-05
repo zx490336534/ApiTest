@@ -8,7 +8,7 @@ import router from './router'
 
 import ElementUI from 'element-ui';
 import VueI18n from 'vue-i18n';
-import { messages } from './components/common/i18n';
+import {messages} from './components/common/i18n';
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/css/icon.css';
 import "babel-polyfill";

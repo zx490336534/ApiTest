@@ -24,8 +24,47 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="忽略/backend/front_ends/">
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+    <list default="true" id="a13fe7e0-9fc4-40fe-bd2f-b6ced3a449e0" name="Default Changelist" comment="前端内容发生变更需要修改/var/lib/docker/volumes/apitest_online_web/_data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/ApiTest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/ApiTest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/color-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/color-dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/icon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/color-green.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/css/theme-green/color-green.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/axios/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/axios/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Tags.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/403.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/403.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/BuiltinEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/BuiltinEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/BuiltinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/BuiltinList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ConfigureAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ConfigureEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ConfigureList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ConfigureList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/EnvAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/EnvAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/EnvList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/EnvList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/InterfaceAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/InterfaceAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/InterfaceList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/InterfaceList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ProjectAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ProjectAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ProjectList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ProjectList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ReportList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ReportList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/ReportView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/ReportView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestcaseAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestcaseEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestcaseList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestcaseList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/page/TestsuiteList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +105,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DeployApiTest/django_app_docker/ApiTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,9 +113,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/../DeployApiTest/django_app_docker/ApiTest" />
       <recent name="$PROJECT_DIR$/apps" />
     </key>
@@ -87,7 +128,7 @@
       <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="01_tb_projects.sql and 7 more" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/backend/test/01_tb_projects.sql" />
       <script-file value="$PROJECT_DIR$/backend/test/02_tb_interfaces.sql" />
@@ -164,23 +205,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Database Script.01_tb_projects.sql" />
-      <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
-      <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
-      <item itemvalue="Django Server.ApiTest" />
-      <item itemvalue="npm.dev" />
+      <item itemvalue="Django 服务器.ApiTest" />
       <item itemvalue="npm.build" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="数据库脚本.01_tb_projects.sql" />
+      <item itemvalue="数据库脚本.01_tb_projects.sql and 7 more" />
+      <item itemvalue="数据库脚本.02_tb_interfaces.sql and 6 more" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="Database Script.01_tb_projects.sql and 7 more" />
-        <item itemvalue="Database Script.02_tb_interfaces.sql and 6 more" />
-        <item itemvalue="Database Script.01_tb_projects.sql" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -202,6 +241,13 @@
       <workItem from="1595373592979" duration="34000" />
       <workItem from="1600260863708" duration="6427000" />
       <workItem from="1600432595861" duration="511000" />
+      <workItem from="1600579111825" duration="7978000" />
+      <workItem from="1600783676903" duration="20000" />
+      <workItem from="1605093081189" duration="662000" />
+      <workItem from="1606013192359" duration="22000" />
+      <workItem from="1608301024897" duration="763000" />
+      <workItem from="1608345507159" duration="20000" />
+      <workItem from="1622865025089" duration="2088000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1572046183655</created>
@@ -378,11 +424,53 @@
       <option name="project" value="LOCAL" />
       <updated>1600573447889</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="优化启动方式">
+      <created>1600579132596</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1600579132596</updated>
+    </task>
+    <task id="LOCAL-00027" summary="新建文件夹">
+      <created>1600581115290</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1600581115290</updated>
+    </task>
+    <task id="LOCAL-00028" summary="新建文件夹">
+      <created>1600581173213</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1600581173213</updated>
+    </task>
+    <task id="LOCAL-00029" summary="VOLUME /var/www/html/">
+      <created>1600581805155</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1600581805155</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修改文件夹">
+      <created>1600582138111</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1600582138111</updated>
+    </task>
+    <task id="LOCAL-00031" summary="前端内容发生变更需要修改/var/lib/docker/volumes/apitest_online_web/_data">
+      <created>1600592407218</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1600592407218</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -407,10 +495,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="git init" />
-    <MESSAGE value="添加日志器" />
-    <MESSAGE value="创建日志文件就" />
-    <MESSAGE value="前端部分" />
     <MESSAGE value="开启跨域" />
     <MESSAGE value="注册的时候校验账号密码" />
     <MESSAGE value="自动生成logs文件夹" />
@@ -431,125 +515,12 @@
     <MESSAGE value="配置列表页面增加级联过滤" />
     <MESSAGE value="修改打包内容" />
     <MESSAGE value="忽略/backend/front_ends/" />
-    <option name="LAST_COMMIT_MESSAGE" value="忽略/backend/front_ends/" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="406" y="134" key="#01_tb_projects.sql" timestamp="1600432752544">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="406" y="134" key="#01_tb_projects.sql/0.23.1440.877@0.23.1440.877" timestamp="1600432752544" />
-    <state x="406" y="129" key="#01_tb_projects.sql_and_7_more" timestamp="1600432920084">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="406" y="129" key="#01_tb_projects.sql_and_7_more/0.23.1440.877@0.23.1440.877" timestamp="1600432920084" />
-    <state x="406" y="129" key="#02_tb_interfaces.sql_and_6_more" timestamp="1600432772258">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="406" y="129" key="#02_tb_interfaces.sql_and_6_more/0.23.1440.877@0.23.1440.877" timestamp="1600432772258" />
-    <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment" timestamp="1594479044108">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="407" y="191" key="#DeployApiTest:_Compose_Deployment/0.23.1440.877@0.23.1440.877" timestamp="1594479044108" />
-    <state x="485" y="179" key="#Docker" timestamp="1594517451225">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="485" y="179" key="#Docker/0.23.1440.877@0.23.1440.877" timestamp="1594517451225" />
-    <state x="484" y="179" key="#New_Docker_Connection" timestamp="1594517428031">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="484" y="179" key="#New_Docker_Connection/0.23.1440.877@0.23.1440.877" timestamp="1594517428031" />
-    <state x="492" y="351" key="#YAML" timestamp="1600266267517">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="492" y="351" key="#YAML/0.23.1440.877@0.23.1440.877" timestamp="1600266267517" />
-    <state x="123" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600263840747">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="123" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263840747" />
-    <state x="406" y="191" key="#docker-compose.yml:_Compose_Deployment" timestamp="1600266896197">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="406" y="191" key="#docker-compose.yml:_Compose_Deployment/0.23.1440.877@0.23.1440.877" timestamp="1600266896197" />
-    <state x="225" y="321" width="1215" height="579" key="#xdebugger.evaluate" timestamp="1600527307433">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="225" y="321" width="1215" height="579" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1600527307433" />
-    <state width="917" height="466" key="DebuggerActiveHint" timestamp="1600567794687">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="917" height="466" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1600567794687" />
-    <state x="59" y="103" width="1240" height="677" key="DiffContextDialog" timestamp="1600567850196">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="59" y="103" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1600567850196" />
-    <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog" timestamp="1600263839797">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="291" y="199" width="842" height="579" key="EnvironmentVariablesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600263839797" />
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom" timestamp="1600573309220">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600573309220" />
-    <state width="1398" height="307" key="GridCell.Tab.0.center" timestamp="1600573309218">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600573309218" />
-    <state width="1398" height="307" key="GridCell.Tab.0.left" timestamp="1600573309218">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600573309218" />
-    <state width="1398" height="307" key="GridCell.Tab.0.right" timestamp="1600573309220">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="307" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600573309220" />
-    <state width="1398" height="323" key="GridCell.Tab.1.bottom" timestamp="1600568198884">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="323" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600568198884" />
-    <state width="1398" height="323" key="GridCell.Tab.1.center" timestamp="1600568198883">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="323" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1600568198883" />
-    <state width="1398" height="323" key="GridCell.Tab.1.left" timestamp="1600568198883">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="323" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1600568198883" />
-    <state width="1398" height="323" key="GridCell.Tab.1.right" timestamp="1600568198884">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="323" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1600568198884" />
-    <state x="487" y="171" key="RollbackChangesDialog" timestamp="1600567439474">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="487" y="171" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600567439474" />
-    <state x="297" y="29" width="900" height="722" key="SettingsEditor" timestamp="1600432687704">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="297" y="29" width="900" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600432687704" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1600573449507">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1600573449507" />
-    <state width="720" height="438" key="XDebugger.FullValuePopup" timestamp="1594476099758">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="720" height="438" key="XDebugger.FullValuePopup/0.23.1440.877@0.23.1440.877" timestamp="1594476099758" />
-    <state x="419" y="94" width="604" height="735" key="find.popup" timestamp="1600572564728">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="419" y="94" width="604" height="735" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1600572564728" />
-    <state x="405" y="257" key="git4idea.merge.GitPullDialog" timestamp="1600260873741">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="405" y="257" key="git4idea.merge.GitPullDialog/0.23.1440.877@0.23.1440.877" timestamp="1600260873741" />
-    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1600568177425">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="385" y="112" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1600568177425" />
-    <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600261037305">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="450" y="305" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1440.877@0.23.1440.877" timestamp="1600261037305" />
+    <MESSAGE value="优化启动方式" />
+    <MESSAGE value="新建文件夹" />
+    <MESSAGE value="VOLUME /var/www/html/" />
+    <MESSAGE value="修改文件夹" />
+    <MESSAGE value="前端内容发生变更需要修改/var/lib/docker/volumes/apitest_online_web/_data" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端内容发生变更需要修改/var/lib/docker/volumes/apitest_online_web/_data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ApiTest$manage.coverage" NAME="manage Coverage Results" MODIFIED="1600263647365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
