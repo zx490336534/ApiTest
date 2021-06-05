@@ -10,6 +10,12 @@
       <div class="handle-box">
         <el-input v-model="select_word" placeholder="输入筛选关键词" class="handle-input mr10"></el-input>
       </div>
+      <el-alert
+          title="编写后相关函数可用于对应项目"
+          type="info"
+          center
+          show-icon >
+      </el-alert>
       <el-table :data="data" border class="table" ref="multipleTable" stripe>
 
         <el-table-column type="index" label="序号" width="55" align="center"></el-table-column>
