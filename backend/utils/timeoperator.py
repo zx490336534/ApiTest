@@ -16,7 +16,8 @@ def change_time(timestr):
     :param timestr:数据库获取到的时间
     :return:
     """
-    c_time = datetime.datetime.strptime(timestr.split('.')[0], '%Y-%m-%dT%H:%M:%S') + datetime.timedelta(hours=8)
+    # c_time = datetime.datetime.strptime(timestr.split('.')[0], '%Y-%m-%dT%H:%M:%S') + datetime.timedelta(hours=8)
+    c_time = datetime.datetime.strptime(timestr.split('.')[0], '%Y-%m-%dT%H:%M:%S')
     return c_time.strftime('%Y-%m-%d %H:%M:%S')
 
 
