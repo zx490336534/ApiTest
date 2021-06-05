@@ -30,12 +30,12 @@
                         {{ username }} <i class="el-icon-caret-bottom"></i>
                     </span>
           <el-dropdown-menu slot="dropdown">
-            <!-- <a href="http://blog.gdfengshuo.com/about/" target="_blank">
+            <a href="http://www.zhongxin.website/" target="_blank">
                 <el-dropdown-item>关于作者</el-dropdown-item>
             </a>
-            <a href="https://github.com/lin-xin/vue-manage-system" target="_blank">
+            <a href="https://github.com/zx490336534/ApiTest" target="_blank">
                 <el-dropdown-item>项目仓库</el-dropdown-item>
-            </a> -->
+            </a>
             <el-dropdown-item divided command="logout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
@@ -51,7 +51,7 @@ export default {
     return {
       collapse: false,
       fullscreen: false,
-      name: '野柠檬',
+      name: '游客',
       // message: 2
     }
   },
@@ -64,7 +64,7 @@ export default {
   methods: {
     // 用户名下拉菜单选择事件
     handleCommand(command) {
-      if (command == 'logout') {
+      if (command === 'logout') {
         sessionStorage.clear();
         localStorage.clear();
         this.$router.push('/login');
