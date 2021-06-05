@@ -140,10 +140,7 @@ import {
   run_by_interface,
   all_interfaces_project,
   interfaces_list_all
-} from '../../api/api';
-import {
-  O_RDONLY
-} from 'constants';
+} from '@/api/api';
 
 export default {
   name: 'basetable',
@@ -159,10 +156,8 @@ export default {
       total_nums: 1, // 数据总条数
 
       multipleSelection: [],
-      // select_cate: '',
       select_word: '',
       del_list: [],
-      // is_search: false,
       editVisible: false, // 新增项目弹框是否显示标识
       delVisible: false, // 删除项目弹框是否显示标识
       runVisible: false, // 运行项目弹框是否显示标识
@@ -258,9 +253,6 @@ export default {
             this.options = response.data
           })
     },
-    search() {
-      this.is_search = true;
-    },
     formatter(row, column) {
       return row.address;
     },
@@ -307,7 +299,6 @@ export default {
     },
     // 保存编辑
     saveEdit() {
-      // var datas = this.form;
       var datas = Object.assign({}, this.form);
       delete datas.project;
       edit_interface(this.id, datas)
@@ -329,7 +320,6 @@ export default {
             this.editVisible = false;
             this.$message.error('服务器错误');
           })
-
     },
     // 确定删除
     deleteRow() {
@@ -363,7 +353,7 @@ export default {
             this.$message.error('服务器错误');
           })
     },
-    //
+    // 选择运行环境后运行
     confirmRun() {
       run_by_interface(this.id, this.env_id)
           .then(response => {
@@ -373,7 +363,14 @@ export default {
             })
           })
           .catch(error => {
-            this.$message.error('服务器错误');
+            console.log(error)
+            if ('detail' in error) {
+              this.$message.error(error['detail']);
+
+            } else {
+              this.$message.error('服务器错误');
+
+            }
           })
     },
     choice_project(row) {
