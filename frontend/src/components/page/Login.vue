@@ -1,6 +1,5 @@
 <template>
   <div class="login-wrap">
-    <!-- <img src="../../assets/img/logo.png" alt="logo"> -->
     <div class="ms-login">
       <div class="ms-title">用户登录</div>
       <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="ms-content">
@@ -16,12 +15,10 @@
             <el-button slot="prepend" icon="el-icon-lx-lock"></el-button>
           </el-input>
         </el-form-item>
-
         <el-form-item label="记住我" class="remember_me" size="mini">
           <el-switch v-model="ruleForm.remember_me"></el-switch>
           <el-link type="info" :underline="false" class="register_link" href="/register">没有账号？点击注册</el-link>
         </el-form-item>
-
         <div class="login-btn">
           <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
         </div>
@@ -32,10 +29,7 @@
 </template>
 
 <script>
-// import cookie from '../../static/js/cookie';
-import {
-  login
-} from '../../api/api'
+import {login} from '@/api/api'
 
 export default {
   data: function () {
@@ -63,53 +57,44 @@ export default {
   },
   methods: {
     submitForm(formName) {
-      // alert(1111);
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          var that = this;
           login(this.ruleForm)
               .then((response) => {
-
                 // 使用浏览器本地存储保存token
-                if (that.remember_me) {
-                  // 记住登录
+                if (this.remember_me) {
+                  // 选择"记住我"
                   sessionStorage.clear();
                   localStorage.token = response.data.token;
                   localStorage.user_id = response.data.user_id;
                   localStorage.username = response.data.username;
                 } else {
-                  // 未记住登录
+                  // 不选择"记住我"
                   localStorage.clear();
                   sessionStorage.token = response.data.token;
                   sessionStorage.user_id = response.data.user_id;
                   sessionStorage.username = response.data.username;
                 }
-                that.$router.push({
+                this.$router.push({
                   name: 'index'
                 })
               })
               .catch(error => {
-                // console.log(error)
-                if ("non_field_errors" in error && error.status_code == 400) {
-                  // that.err_msg = error.non_field_errors[0];
-                  that.err_msg = '用户名或密码错误';
+                this.err_info = true;
+                if ("non_field_errors" in error) {
+                  this.err_msg = '用户名或密码错误';
                 }
-
                 if (error.response) {
-                  that.err_msg = '服务器异常';
+                  this.err_msg = '服务器异常';
                 } else if (error.request) {
-                  // that.err_msg = error.message;
-                  that.err_msg = "网络异常";
-
+                  this.err_msg = "网络异常";
                 }
-
-                that.err_info = true;
+                this.$message.error(this.err_msg);
               });
-
         } else {
-          // console.log('error submit!!');
           this.err_msg = '参数有误';
           this.err_info = true;
+          this.$message.error(this.err_msg);
           return false;
         }
       });
