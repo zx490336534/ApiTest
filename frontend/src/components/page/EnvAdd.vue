@@ -23,15 +23,14 @@
             <el-input type="textarea" rows="4" v-model="form.desc" clearable></el-input>
           </el-form-item>
 
-
           <el-form-item>
             <el-button type="primary" @click="onSubmit('form')">提交</el-button>
             <el-button @click="resetForm('form')">取消</el-button>
           </el-form-item>
+
         </el-form>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -39,7 +38,7 @@
 import {
   add_env,
   envs_names
-} from '../../api/api';
+} from '@/api/api';
 
 export default {
   name: 'baseform',
@@ -95,22 +94,21 @@ export default {
           add_env(this.form)
               .then((response) => {
                 this.$message.success('新增配置成功！');
-                // this.$refs['form'].resetFields();   // 清空提示信息
                 // 1秒钟之后, 执行刷新
                 setInterval(function () {
                   that.$router.go();
                 }, 1000);
               })
               .catch(error => {
+                console.log(error)
                 if (typeof error === 'object' && error.hasOwnProperty('name')) {
                   this.$message.error('配置名称已存在');
+                } else if ("base_url" in error) {
+                  this.$message.error(error["base_url"].join());
                 } else {
-                  // console.log(error);
                   this.$message.error('服务器错误');
                 }
-
               });
-
         } else {
           this.$message.error('参数有误');
           return false;
