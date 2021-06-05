@@ -1,4 +1,4 @@
-# 基于HttpRunner的接口测试平台
+# 基于HttpRunner 2.x的接口测试平台
 实例地址:[http://123.56.13.233:8866/](http://123.56.13.233:8866/)
 
 ![登录页](./img/登录页.png)
@@ -6,6 +6,56 @@
 ![首页](./img/首页.png)
 
 ![报告页面](./img/报告页面.png)
+
+## 本地运行
+0. 全局搜索`123.56.13.233`,将该地址修改为需要部署的IP或者`127.0.0.1`
+
+1. 安装python运行环境
+```shell
+cd /backend
+pip install -r requirements.txt
+```
+2. 数据库创建
+```shell
+CREATE DATABASE IF NOT EXISTS test DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+```
+
+3. 修改连接设置
+找到backend/ApiTest/settings.py中的`DATABASES`
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test',
+        'USER': '你数据库连接的账号',
+        'PASSWORD': '你数据库连接的密码',
+        'HOST': '你的IP地址',
+        'PORT': 3306
+    }
+}
+```
+修改其中的连接地址、账号、密码
+
+4. 数据库迁移
+```shell
+python manage.py migrate
+```
+
+5. 运行
+```shell
+python manage.py runserver
+```
+
+6. 前端安装
+进入frontend
+```shell
+npm install
+```
+
+7. 运行前端
+```shell
+npm run serve
+```
 
 ## 部署方式
 1. 修改部署的IP
