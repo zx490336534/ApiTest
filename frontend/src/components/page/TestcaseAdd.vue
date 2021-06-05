@@ -81,7 +81,6 @@
         </el-tab-pane>
 
         <el-tab-pane label="请求信息">
-          <!--<div class="form-box">-->
           <el-form style="margin: 0 0 0 10px">
             <el-form-item>
               <el-input placeholder="Enter request URL" v-model="apiMsgData.url" class="input-with-select"
@@ -126,10 +125,10 @@
             </el-table-column>
           </el-table>
 
-          <el-tabs style="margin: 0 0 0 10px" v-model="bodyShow">
+          <el-tabs style="margin: 0 0 0 10px" v-model="bodyShow" @tab-click="handleTabChange">
             <el-tab-pane label="Headers(请求头)" name="first">
               <el-table :data="apiMsgData.header" size="mini" stripe :show-header="false"
-                        class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
+                        class="h-b-e-a-style">
                 <el-table-column property="key" label="Key" header-align="center" minWidth="100">
                   <template slot-scope="scope">
                     <el-input v-model="scope.row.key" size="mini" placeholder="key">
@@ -179,8 +178,7 @@
               </div>
               <el-table :data="apiMsgData.variable" size="mini" stripe :show-header="false" height="500"
                         style="background-color: rgb(250, 250, 250)"
-                        v-if="apiMsgData.choiceType === 'data'"
-                        :row-style="{'background-color': 'rgb(250, 250, 250)'}">
+                        v-if="apiMsgData.choiceType === 'data'">
                 <el-table-column label="Key" header-align="center" minWidth="100">
                   <template slot-scope="scope">
                     <el-input v-model="scope.row.key" size="mini" placeholder="key">
@@ -220,7 +218,7 @@
             </el-tab-pane>
             <el-tab-pane label="Extract(提取)" name="third">
               <el-table :data="apiMsgData.extract" size="mini" stripe :show-header="false"
-                        class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
+                        class="h-b-e-a-style">
                 <el-table-column property="key" label="Key" header-align="center" minWidth="100">
                   <template slot-scope="scope">
                     <el-input v-model="scope.row.key" size="mini" placeholder="key">
@@ -244,8 +242,7 @@
             </el-tab-pane>
             <el-tab-pane label="Assert(断言)" name="fourth">
               <el-table :data="apiMsgData.validate" size="mini" stripe :show-header="false"
-                        class="h-b-e-a-style" :row-style="{'background-color': 'rgb(250, 250, 250)'}">
-
+                        class="h-b-e-a-style">
                 <el-table-column property="key" label="Key" header-align="center" minWidth="100">
                   <template slot-scope="scope">
                     <el-input v-model="scope.row.key" size="mini" placeholder="check">
@@ -394,7 +391,6 @@
         </el-tab-pane>
       </el-tabs>
 
-
       <el-row>
         <el-col :span="2">
           <el-button type="primary" @click="onSubmit()">提交</el-button>
@@ -408,6 +404,34 @@
     <v-contextmenu ref="contextmenu">
       <v-contextmenu-item @click="handleClick">clear</v-contextmenu-item>
     </v-contextmenu>
+
+    <el-drawer
+        :title="helptitle"
+        :visible.sync="drawer"
+        :direction="direction">
+      <el-alert
+          title="使用对应value从接口返回内容中拿到需要的内容进行操作"
+          type="info"
+          effect="dark"
+          show-icon>
+      </el-alert>
+      <template>
+        <el-table
+            :data="helpinfo"
+            style="width: 100%">
+          <el-table-column
+              prop="helpmsg"
+              label="帮助信息"
+              width="180">
+          </el-table-column>
+          <el-table-column
+              prop="value"
+              label="value"
+              width="180">
+          </el-table-column>
+        </el-table>
+      </template>
+    </el-drawer>
 
     <!-- 编辑弹出框 -->
     <el-dialog title="创建用例" :visible.sync="editVisible" width="28%" center>
@@ -452,7 +476,7 @@ import {
   configures_by_interface_id,
   testcases_by_interface_id,
   add_testcase
-} from '../../api/api';
+} from '@/api/api';
 
 export default {
   name: 'baseform',
@@ -573,6 +597,13 @@ export default {
       // testcases: [], // 选择的某接口下的所有用例
       unselected: [], // 未选择的用例
       selected: [], // 已选择的用例
+      drawer: false, // 提示信息是否展示
+      direction: "rtl", // 从右向左展开
+      helptitle: "", // 帮助信息标题
+      helpinfo: [{
+        value: "",
+        helpmsg: ""
+      }], // 帮助信息内容
     }
   },
   created() {
@@ -1129,6 +1160,45 @@ export default {
       // 调用 callback 返回建议列表的数据
       cb(this.comparators);
     },
+    // 根据请求信息业签 弹出提示信息
+    handleTabChange(tab, event) {
+      if (tab.label.indexOf("Extract") !== -1) {
+        this.drawer = true;
+        this.helptitle = "提取信息帮助";
+        this.helpinfo = [
+          {
+            value: "status_code",
+            helpmsg: "请求响应状态码"
+          },
+          {
+            value: "headers.xxx",
+            helpmsg: "请求返回头部中的内容"
+          },
+          {
+            value: "content.xxx",
+            helpmsg: "请求返回正文中的内容"
+          },
+        ]
+      } else if (tab.label.indexOf("Assert") !== -1) {
+        this.drawer = true;
+        this.helptitle = "断言信息帮助";
+        this.helpinfo = [
+          {
+            value: "status_code",
+            helpmsg: "请求响应状态码"
+          },
+          {
+            value: "headers.xxx",
+            helpmsg: "请求返回头部中的内容"
+          },
+          {
+            value: "content.xxx",
+            helpmsg: "请求返回正文中的内容"
+          },
+        ]
+      }
+    },
+
   },
   computed: {
     monitorParam() {
