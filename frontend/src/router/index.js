@@ -1,7 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import VueRouter from 'vue-router';
 
 Vue.use(Router);
+
+// 解决编程式路由往同一地址跳转时会报错的情况
+const originalPush = VueRouter.prototype.push;
+const originalReplace = VueRouter.prototype.replace;
+VueRouter.prototype.push = function push(location, onResolve, onReject) {
+    return originalPush.call(this, location).catch(err => err);
+};
+VueRouter.prototype.replace = function push(location, onResolve, onReject) {
+    return originalReplace.call(this, location).catch(err => err);
+};
 
 let router = new Router({
     mode: 'history',
