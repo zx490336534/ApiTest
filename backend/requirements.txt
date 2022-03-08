@@ -15,7 +15,7 @@ djangorestframework-jwt==1.11.0
 drf-yasg==1.17.0
 filetype==1.0.5
 har2case==0.3.1
-httpie==1.0.3
+httpie==3.1.0
 httpie-jwt-auth==0.3.0
 HttpRunner==1.5.8
 idna==2.8
